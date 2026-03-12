@@ -152,9 +152,9 @@ with st.sidebar:
 
     st.markdown('<hr style="border:none;border-top:1px solid #e0e0e0;margin:1.2rem 0 0.8rem 0">', unsafe_allow_html=True)
     st.markdown('<div class="sidebar-label">Partners</div>', unsafe_allow_html=True)
-    st.markdown(logo_html("https://zakelijkschrijven.nl/wp-content/uploads/2021/01/HvA-logo-300x150.png", "https://www.hva.nl"), unsafe_allow_html=True)
-    st.markdown(logo_html("https://media.licdn.com/dms/image/v2/C4E0BAQHDOWaE9cxiiA/company-logo_200_200/company-logo_200_200/0/1679308588602/city_net_zero_logo?e=2147483647&v=beta&t=IkQsjO5KE7qmqVSHg5obO8jh1M84DDHNhr3xKkXJUUA", "https://www.hva.nl/city-net-zero"), unsafe_allow_html=True)
-    st.markdown(logo_html("https://lectorenplatformleve.nl/wp-content/uploads/2021/11/image.png-4.png", "https://lectorenplatformleve.nl/"), unsafe_allow_html=True)
+    st.markdown(logo_html(<img src="https://zakelijkschrijven.nl/wp-content/uploads/2021/01/HvA-logo-300x150.png", width="500", height="600">, "https://www.hva.nl"), unsafe_allow_html=True)
+    st.markdown(logo_html(<img src="https://media.licdn.com/dms/image/v2/C4E0BAQHDOWaE9cxiiA/company-logo_200_200/company-logo_200_200/0/1679308588602/city_net_zero_logo?e=2147483647&v=beta&t=IkQsjO5KE7qmqVSHg5obO8jh1M84DDHNhr3xKkXJUUA", width="500", height="600">, "https://www.hva.nl/city-net-zero"), unsafe_allow_html=True)
+    st.markdown(logo_html(<img src="https://lectorenplatformleve.nl/wp-content/uploads/2021/11/image.png-4.png", width="500", height="600">, "https://lectorenplatformleve.nl/"), unsafe_allow_html=True)
 
 filtered = df.copy()
 if sel_prov: filtered = filtered[filtered['Provincie'].isin(sel_prov)]
