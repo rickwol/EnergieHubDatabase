@@ -117,7 +117,7 @@ h1, h2, h3 { font-family: 'Syne', sans-serif !important; letter-spacing: -0.02em
 def load_data():
     candidates = [
         Path(__file__).parent / "Energiehubs_Uniform_fases.xlsx",
-        Path("Energiehubs_Verfijnd_GPS.xlsx"),
+        Path("Energiehubs_Uniform_fases.xlsx"),
     ]
     for path in candidates:
         if path.exists():
