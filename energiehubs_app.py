@@ -127,7 +127,7 @@ def load_data():
         st.error("❌ Zet 'Energiehubs_Verfijnd_GPS.xlsx' naast dit script.")
         st.stop()
 
-    df.columns = ['Project naam', 'URL', 'Provincie', 'Plaats', 'Adres', 'Fase', 'GPS_Coordinate', 'Type Hub', 'Verfijnde typering',	'RES-Regio' ,	'Deelnemers',	'Energiedrager'
+    df.columns = ['Project naam', 'URL', 'Provincie', 'Plaats', 'Adres', 'Fase', 'GPS_Coordinate', 'Type Hub', 'Verfijnde typering',	'RES-Regio' ,	'Deelnemers',	'Energiedrager', 'Type Contract'
 ]
 
     def parse_gps(val):
