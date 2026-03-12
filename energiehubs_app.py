@@ -116,8 +116,8 @@ h1, h2, h3 { font-family: 'Syne', sans-serif !important; letter-spacing: -0.02em
 @st.cache_data
 def load_data():
     candidates = [
-        Path(__file__).parent / "Energiehubs_Uniform_fases.xlsx",
-        Path("Energiehubs_Uniform_fases.xlsx"),
+        Path(__file__).parent / "Energiehubs_Uniform_Fases.xlsx",
+        Path("Energiehubs_Uniform_Fases.xlsx"),
     ]
     for path in candidates:
         if path.exists():
@@ -127,7 +127,8 @@ def load_data():
         st.error("❌ Zet 'Energiehubs_Verfijnd_GPS.xlsx' naast dit script.")
         st.stop()
 
-    df.columns = ['Project naam', 'URL', 'Provincie', 'Plaats', 'Adres', 'Fase', 'GPS_Coordinate', 'Type Hub']
+    df.columns = ['Project naam', 'URL', 'Provincie', 'Plaats', 'Adres', 'Fase', 'GPS_Coordinate', 'Type Hub', 'Verfijnde typering',	'RES-Regio' ,	'Deelnemers',	'Energiedrager'
+]
 
     def parse_gps(val):
         if pd.isna(val):
@@ -234,7 +235,7 @@ st.markdown('<div class="section-title">📋 Datasheet per Type Hub</div>', unsa
 
 TYPES = ['Bedrijventerrein', 'Gebouwde Omgeving', 'Mobiliteit', 'Cluster 6']
 ICONS = {'Bedrijventerrein': '🏭', 'Gebouwde Omgeving': '🏠', 'Mobiliteit': '🚗', 'Cluster 6': '⚡'}
-TAB_COLS = ['Project naam', 'URL', 'Provincie', 'Plaats', 'Adres', 'Fase']
+TAB_COLS = ['Project naam', 'URL', 'Provincie', 'Plaats', 'Adres', 'Fase', 'Verfijnde typering', 'RES-Regio' , 'Deelnemers', 'Energiedrager']
 
 tabs = st.tabs([f"{ICONS[t]}  {t}  ({len(filtered[filtered['Type'] == t])})" for t in TYPES])
 
