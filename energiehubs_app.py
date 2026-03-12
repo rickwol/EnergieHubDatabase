@@ -13,9 +13,8 @@ st.set_page_config(
 )
 
 # ── SVG logo's als inline strings ─────────────────────────────────────────────
-# Hogeschool van Amsterdam – rode blok + tekst
 HVA_SVG = """
-<svg xmlns="https://zakelijkschrijven.nl/hva-logo/" viewBox="0 0 200 52" width="160" height="42">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 52" width="160" height="42">
   <rect x="0" y="0" width="48" height="52" fill="#E3000F"/>
   <text x="24" y="34" font-family="Arial,sans-serif" font-size="22" font-weight="900"
         fill="white" text-anchor="middle">H</text>
@@ -30,9 +29,8 @@ HVA_SVG = """
 </svg>
 """
 
-# City Net Zero – groen blad/cirkel icoon + tekst
 CNZ_SVG = """
-<svg xmlns="https://media.licdn.com/dms/image/v2/C4E0BAQHDOWaE9cxiiA/company-logo_200_200/company-logo_200_200/0/1679308588602/city_net_zero_logo?e=2147483647&v=beta&t=IkQsjO5KE7qmqVSHg5obO8jh1M84DDHNhr3xKkXJUUA" viewBox="0 0 200 56" width="160" height="45">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 56" width="160" height="45">
   <circle cx="22" cy="28" r="22" fill="#00843D"/>
   <text x="22" y="35" font-family="Arial,sans-serif" font-size="20" font-weight="900"
         fill="white" text-anchor="middle">C</text>
@@ -44,7 +42,6 @@ CNZ_SVG = """
 </svg>
 """
 
-# LEVE – blauw/groen energiepijl icoon + tekst
 LEVE_SVG = """
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 56" width="160" height="45">
   <rect x="0" y="4" width="44" height="44" rx="6" fill="#004B8D"/>
@@ -58,7 +55,6 @@ LEVE_SVG = """
 """
 
 def logo_html(svg: str, link: str) -> str:
-    """Wrap SVG in a white pill card with optional hyperlink."""
     inner = f'<a href="{link}" target="_blank" style="display:block">{svg}</a>' if link else svg
     return f"""
     <div style="
@@ -124,11 +120,12 @@ def load_data():
             df = pd.read_excel(path)
             break
     else:
-        st.error("❌ Zet 'Energiehubs_Verfijnd_GPS.xlsx' naast dit script.")
+        st.error("❌ Zet 'Energiehubs_Uniform_Fases.xlsx' naast dit script.")
         st.stop()
 
-    df.columns = ['Project naam', 'URL', 'Provincie', 'Plaats', 'Adres', 'Fase', 'GPS_Coordinate', 'Type Hub', 'Verfijnde typering',	'RES-Regio' ,	'Deelnemers',	'Energiedrager', 'Type Contract'
-]
+    # Gebruik alleen de eerste 8 kolommen (de rest zijn optioneel)
+    df = df.iloc[:, :8]
+    df.columns = ['Project naam', 'URL', 'Provincie', 'Plaats', 'Adres', 'Fase', 'GPS_Coordinate', 'Type Hub']
 
     def parse_gps(val):
         if pd.isna(val):
@@ -137,10 +134,22 @@ def load_data():
         return (float(m.group(1)), float(m.group(2))) if m else (None, None)
 
     df[['lat', 'lon']] = df['GPS_Coordinate'].apply(lambda x: pd.Series(parse_gps(x)))
-    df['Type'] = df['Type Hub'].apply(lambda t: t if t in ['Bedrijventerrein', 'Gebouwde Omgeving', 'Mobiliteit'] else 'Cluster 6')
+
+    df['Type'] = df['Type Hub']
+
     return df
 
 df = load_data()
+
+# Fasevolgorde voor consistente weergave
+FASE_ORDER = ['Fase 1: Verkennen', 'Fase 2: Plannen & Ontwerpen', 'Fase 3: Realiseren', 'Fase 4: Exploiteren', 'Onbekend']
+FASE_COLORS = {
+    'Fase 1: Verkennen':           '#38bdf8',
+    'Fase 2: Plannen & Ontwerpen': '#f59e0b',
+    'Fase 3: Realiseren':          '#a78bfa',
+    'Fase 4: Exploiteren':         '#7feba1',
+    'Onbekend':                    '#4b5563',
+}
 
 # ── Sidebar ────────────────────────────────────────────────────────────────────
 with st.sidebar:
@@ -148,13 +157,13 @@ with st.sidebar:
 
     sel_prov = st.multiselect("Provincie", sorted(df['Provincie'].dropna().unique()))
     sel_type = st.multiselect("Type Hub", sorted(df['Type'].unique()))
-    sel_fase = st.multiselect("Fase", sorted(df['Fase'].dropna().unique()))
+    sel_fase = st.multiselect("Fase", [f for f in FASE_ORDER if f in df['Fase'].unique()])
 
-    st.markdown('<hr style="border:none;border-top:1px solid #e0e0e0;margin:1.2rem 0 0.8rem 0">', unsafe_allow_html=True)
+    st.markdown('<hr style="border:none;border-top:1px solid #2a3040;margin:1.2rem 0 0.8rem 0">', unsafe_allow_html=True)
     st.markdown('<div class="sidebar-label">Partners</div>', unsafe_allow_html=True)
-    #st.markdown(logo_html(<img src="https://zakelijkschrijven.nl/wp-content/uploads/2021/01/HvA-logo-300x150.png", width="500", height="600">, "https://www.hva.nl"), unsafe_allow_html=True)
-    #st.markdown(logo_html(<img src="https://media.licdn.com/dms/image/v2/C4E0BAQHDOWaE9cxiiA/company-logo_200_200/company-logo_200_200/0/1679308588602/city_net_zero_logo?e=2147483647&v=beta&t=IkQsjO5KE7qmqVSHg5obO8jh1M84DDHNhr3xKkXJUUA", width="500", height="600">, "https://www.hva.nl/city-net-zero"), unsafe_allow_html=True)
-    #st.markdown(logo_html(<img src="https://lectorenplatformleve.nl/wp-content/uploads/2021/11/image.png-4.png", width="500", height="600">, "https://lectorenplatformleve.nl/"), unsafe_allow_html=True)
+    st.markdown(logo_html(HVA_SVG, "https://www.hva.nl"), unsafe_allow_html=True)
+    st.markdown(logo_html(CNZ_SVG, "https://www.hva.nl/city-net-zero"), unsafe_allow_html=True)
+    st.markdown(logo_html(LEVE_SVG, "https://www.hanze.nl/nld/onderzoek/speerpunten/energie/lectorenplatform-energievoorziening-evenwicht-leve"), unsafe_allow_html=True)
 
 filtered = df.copy()
 if sel_prov: filtered = filtered[filtered['Provincie'].isin(sel_prov)]
@@ -166,14 +175,23 @@ filtered_map = filtered[filtered['lat'].notna()]
 st.markdown('<div class="main-title">Energiehubs Nederland</div>', unsafe_allow_html=True)
 st.markdown('<div class="main-subtitle">Overzicht van energiehub-projecten — filter via de zijbalk</div>', unsafe_allow_html=True)
 
-k1, k2, k3, k4 = st.columns(4)
-for col, val, label in [(k1, len(filtered), "Hubs totaal"), (k2, len(filtered_map), "Met locatie"), (k3, filtered['Provincie'].nunique(), "Provincies"), (k4, filtered['Type'].nunique(), "Types")]:
+k1, k2, k3 = st.columns(3)
+for col, val, label in [
+    (k1, len(filtered), "Hubs totaal"),
+    (k2, len(filtered_map), "Met locatie"),
+    (k3, filtered['Provincie'].nunique(), "Provincies"),
+]:
     col.markdown(f'<div class="kpi-card"><div class="kpi-value">{val}</div><div class="kpi-label">{label}</div></div>', unsafe_allow_html=True)
 
 st.markdown("<div style='height:1.2rem'></div>", unsafe_allow_html=True)
 
-# ── Kaart + Grafiek ────────────────────────────────────────────────────────────
-TYPE_COLOR = {'Bedrijventerrein': '#f59e0b', 'Gebouwde Omgeving': '#38bdf8', 'Mobiliteit': '#7feba1', 'Cluster 6': '#a78bfa'}
+# ── Kaart + Grafieken ──────────────────────────────────────────────────────────
+TYPE_COLOR = {
+    'Bedrijventerrein': '#f59e0b',
+    'Gebouwde Omgeving': '#38bdf8',
+    'Mobiliteit': '#7feba1',
+    'Cluster 6': '#a78bfa',
+}
 
 map_col, chart_col = st.columns([3, 2], gap="large")
 
@@ -200,9 +218,10 @@ with map_col:
             tooltip=str(row['Project naam']),
         ).add_to(m)
 
-    st_folium(m, height=430, use_container_width=True)
+    st_folium(m, height=450, use_container_width=True)
 
 with chart_col:
+    # Grafiek 1: Hubs per Type (zonder aantallen in de titel)
     st.markdown('<div class="section-title">📊 Hubs per Type</div>', unsafe_allow_html=True)
     type_counts = filtered['Type'].value_counts().reset_index()
     type_counts.columns = ['Type', 'Aantal']
@@ -216,18 +235,19 @@ with chart_col:
                       yaxis=dict(showgrid=False, title='', tickfont=dict(size=13, color='#c8d8c0')))
     st.plotly_chart(fig, use_container_width=True)
 
-    st.markdown('<div class="section-title">🗺️ Top 10 Provincies</div>', unsafe_allow_html=True)
-    prov_counts = filtered['Provincie'].value_counts().head(10).reset_index()
-    prov_counts.columns = ['Provincie', 'Aantal']
+    # Grafiek 2: Hubs per Fasering
+    st.markdown('<div class="section-title">📈 Hubs per Fase</div>', unsafe_allow_html=True)
+    fase_counts = filtered['Fase'].value_counts().reindex(FASE_ORDER).dropna().reset_index()
+    fase_counts.columns = ['Fase', 'Aantal']
 
-    fig2 = px.bar(prov_counts, x='Provincie', y='Aantal', color='Aantal',
-                  color_continuous_scale=['#1c2a1c', '#7feba1'], text='Aantal')
-    fig2.update_traces(textposition='outside', textfont=dict(color='#c8d8c0', size=11), marker_line_width=0)
-    fig2.update_layout(paper_bgcolor='rgba(0,0,0,0)', plot_bgcolor='rgba(0,0,0,0)', font=dict(color='#8a9bb0'),
-                       showlegend=False, coloraxis_showscale=False, margin=dict(l=0, r=10, t=10, b=60), height=195,
-                       xaxis=dict(showgrid=False, title='', tickfont=dict(size=10, color='#8a9bb0'), tickangle=-35),
-                       yaxis=dict(showgrid=False, showticklabels=False, title=''))
-    st.plotly_chart(fig2, use_container_width=True)
+    fig3 = px.bar(fase_counts, x='Aantal', y='Fase', orientation='h', color='Fase',
+                  color_discrete_map=FASE_COLORS, text='Aantal')
+    fig3.update_traces(textposition='outside', textfont=dict(color='#c8d8c0', size=12), marker_line_width=0)
+    fig3.update_layout(paper_bgcolor='rgba(0,0,0,0)', plot_bgcolor='rgba(0,0,0,0)', font=dict(color='#8a9bb0'),
+                       showlegend=False, margin=dict(l=0, r=50, t=10, b=10), height=220,
+                       xaxis=dict(showgrid=False, zeroline=False, showticklabels=False, title=''),
+                       yaxis=dict(showgrid=False, title='', tickfont=dict(size=11, color='#c8d8c0')))
+    st.plotly_chart(fig3, use_container_width=True)
 
 # ── Tabs datasheet ─────────────────────────────────────────────────────────────
 st.markdown('<hr class="divider">', unsafe_allow_html=True)
@@ -235,7 +255,7 @@ st.markdown('<div class="section-title">📋 Datasheet per Type Hub</div>', unsa
 
 TYPES = ['Bedrijventerrein', 'Gebouwde Omgeving', 'Mobiliteit', 'Cluster 6']
 ICONS = {'Bedrijventerrein': '🏭', 'Gebouwde Omgeving': '🏠', 'Mobiliteit': '🚗', 'Cluster 6': '⚡'}
-TAB_COLS = ['Project naam', 'URL', 'Provincie', 'Plaats', 'Adres', 'Fase', 'Verfijnde typering', 'RES-Regio' , 'Deelnemers', 'Energiedrager']
+TAB_COLS = ['Project naam', 'URL', 'Provincie', 'Plaats', 'Adres', 'Fase']
 
 tabs = st.tabs([f"{ICONS[t]}  {t}  ({len(filtered[filtered['Type'] == t])})" for t in TYPES])
 
