@@ -273,8 +273,7 @@ with tab_hubs:
     # KPI's
     k1, k2, k3 = st.columns(3)
     for col, val, label in [(k1, len(filtered), "Hubs totaal"),
-                             (k2, len(filtered[filtered["Fase"]=="Fase 4: Exploiteren"]), "Operationeel"),
-                             (k3, len(data_rows), "Aangesloten bij Learning Community")]:
+                             (k2, len(filtered[filtered["Fase"]=="Fase 4: Exploiteren"]), "Operationeel")]:
         col.markdown(f'<div class="kpi-card"><div class="kpi-value">{val}</div>'
                      f'<div class="kpi-label">{label}</div></div>', unsafe_allow_html=True)
 
