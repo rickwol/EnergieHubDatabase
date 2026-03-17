@@ -147,22 +147,83 @@ def load_communities():
     path = base / "communities_hubs_brongestuurd.xlsx"
     if not path.exists():
         return None, None, None
+
+    # ── Matrix: hubs × communities ─────────────────────────────────────────────
     raw = pd.read_excel(path, sheet_name='Communities x Hubs', header=None)
-    headers = raw.iloc[2].tolist()
-    data_rows = raw.iloc[3:29].copy()
+
+    # Rij 2 = kolomkoppen (robuust: zoek eerste rij waar col[1] == 'Provincie')
+    header_row = next(
+        i for i, row in raw.iterrows()
+        if str(row[1]).strip().lower() == 'provincie'
+    )
+    headers = raw.iloc[header_row].tolist()
+
+    # Datarijen: sla sectiekoppen (alle overige cellen NaN) en lege rijen over,
+    # stop bij LEGENDA-blok (eerste kolom begint met 'LEGENDA' of '✅ =')
+    data_indices = []
+    for i, row in raw.iterrows():
+        if i <= header_row:
+            continue
+        first = str(row[0]).strip()
+        if first.upper().startswith('LEGENDA') or first == 'nan':
+            continue
+        # Sectiekop: alle kolommen vanaf index 1 zijn NaN
+        rest_nan = all(str(row[j]) == 'nan' for j in range(1, len(row)))
+        if rest_nan:
+            continue
+        data_indices.append(i)
+
+    data_rows = raw.iloc[data_indices].copy()
     data_rows.columns = headers
-    data_rows = data_rows[data_rows['Energiehub / Initiatief'].notna()].reset_index(drop=True)
-    community_cols = headers[3:11]
-    community_cols_clean = [str(c).replace('\n', ' ').strip() for c in community_cols]
-    data_rows = data_rows.rename(columns=dict(zip(community_cols, community_cols_clean)))
-    data_rows = data_rows.rename(columns={
-        'Energiehub / Initiatief': 'Hub', 'Bron / toelichting': 'Bron'})
+
+    # Community-kolommen = alles tussen Provincie/Type (col 1-2) en Bron (laatste col)
+    community_cols_raw = headers[3:-1]
+    community_cols_clean = [str(c).replace('\n', ' ').strip() for c in community_cols_raw]
+    data_rows = data_rows.rename(columns=dict(zip(community_cols_raw, community_cols_clean)))
+
+    # Hernoem eerste en laatste kolom
+    hub_col  = headers[0]
+    bron_col = headers[-1]
+    data_rows = data_rows.rename(columns={hub_col: 'Hub', bron_col: 'Bron'})
+    data_rows = data_rows.reset_index(drop=True)
+
+    # ── Community-profielen ────────────────────────────────────────────────────
     raw_prof = pd.read_excel(path, sheet_name='Community-profielen', header=None)
-    headers_prof = raw_prof.iloc[1].tolist()
-    prof_rows = raw_prof.iloc[2:].copy()
+
+    # Zoek headerrij robuust (eerste cel == 'Community')
+    prof_header_row = next(
+        i for i, row in raw_prof.iterrows()
+        if str(row[0]).strip() == 'Community'
+    )
+    headers_prof = raw_prof.iloc[prof_header_row].tolist()
+
+    prof_indices = []
+    for i, row in raw_prof.iterrows():
+        if i <= prof_header_row:
+            continue
+        first = str(row[0]).strip()
+        if first == 'nan':
+            continue
+        # Sectiekop: alle overige cellen NaN
+        rest_nan = all(str(row[j]) == 'nan' for j in range(1, len(row)))
+        if rest_nan:
+            continue
+        prof_indices.append(i)
+
+    prof_rows = raw_prof.iloc[prof_indices].copy()
     prof_rows.columns = headers_prof
-    prof_rows = prof_rows[prof_rows['Community'].notna()].reset_index(drop=True)
     prof_rows['Community'] = prof_rows['Community'].str.replace('\n', ' ').str.strip()
+
+    # Normaliseer caveat-kolomnaam (verschilt per versie)
+    caveat_col = next(
+        (c for c in prof_rows.columns if 'caveat' in str(c).lower() or 'ontbreekt' in str(c).lower()),
+        None
+    )
+    if caveat_col and caveat_col != 'Wat ontbreekt / caveat':
+        prof_rows = prof_rows.rename(columns={caveat_col: 'Wat ontbreekt / caveat'})
+
+    prof_rows = prof_rows.reset_index(drop=True)
+
     return data_rows, community_cols_clean, prof_rows
 
 df = load_hubs()
@@ -213,7 +274,7 @@ with tab_hubs:
     k1, k2, k3 = st.columns(3)
     for col, val, label in [(k1, len(filtered), "Hubs totaal"),
                              (k2, len(filtered_map), "Met locatie"),
-                             (k3, len(filtered[filtered['Fase']=="Fase 4: Exploiteren"]), "Operationale Hubs")]:
+                             (k3, filtered['Provincie'].nunique(), "Provincies")]:
         col.markdown(f'<div class="kpi-card"><div class="kpi-value">{val}</div>'
                      f'<div class="kpi-label">{label}</div></div>', unsafe_allow_html=True)
 
