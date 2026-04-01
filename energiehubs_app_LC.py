@@ -477,7 +477,7 @@ with tab_matrix:
             hub_names  = mx['Hub'].tolist()
             prov_names = mx['Provincie'].tolist()
             hover_vals = mx[community_cols].values.tolist()
-            z_vals     = mx[community_cols].applymap(sym_to_num).values.tolist()
+            z_vals     = mx[community_cols].map(sym_to_num).values.tolist()
             hover_text = [
                 [f"<b>{hub_names[i]}</b><br>{prov_names[i]}<br>{community_cols[j]}<br>{hover_vals[i][j]}"
                  for j in range(len(community_cols))]
