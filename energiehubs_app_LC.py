@@ -284,7 +284,7 @@ with tab_hubs:
 
     with map_col:
         st.markdown('<div class="section-title">📍 Locaties</div>', unsafe_allow_html=True)
-        m = folium.Map(location=[52.3, 5.3], zoom_start=7, tiles='None')
+        m = folium.Map(location=[52.3, 5.3], zoom_start=7, tiles=None)
         folium.TileLayer(
             tiles="https://basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}.png?api_key=cb1_3fyd_1_f8b8c503be8ddc495132a032",
             attr="© CARTO © OpenStreetMap contributors",
