@@ -1,6 +1,6 @@
 /* Minimal stand-in for the claude.ai Dashboard runtime, so the same page runs standalone. */
 (function () {
-  const sources = { hubs: 'energiehubs.json', provincies: 'provincies.json' };
+  const sources = { hubs: 'energiehubs.json', provincies: 'provincies.json', communities: 'communities.json', community_links: 'community_links.json' };
   const DEFAULT_PARAMS = { prov: 'Alle', type: 'Alle' };
   let params = { ...DEFAULT_PARAMS };
   const store = {}; const calcs = {}; const listeners = [];

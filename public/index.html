@@ -28,6 +28,7 @@ html, body { margin: 0; background: #f2f4f7; }
   --eh-on0: var(--color-fg); --eh-on1: #0b1a33; --eh-on2: #fff; --eh-on3: #fff; --eh-on4: #fff;
   --eh-el: #e0a100; --eh-wa: #d9480f; --eh-h2: #13a3b5; --eh-gg: #4c9a2a; --eh-ko: #7b6cc4;
   --eh-accent: #256abf; --eh-sel: rgba(57, 135, 229, .12);
+  --eh-lc1: #eb6834; --eh-lc2: #f4b496; --eh-lc0: var(--cds-chart-muted);
   --eh-logo-dark: none; --eh-logo-light: block;
   background: var(--color-bg); color: var(--color-fg); font-family: var(--font-anthropic-sans);
   font-feature-settings: "tnum" 0; min-height: 100%;
@@ -42,6 +43,7 @@ html, body { margin: 0; background: #f2f4f7; }
     --eh-on1: #fff; --eh-on2: #fff; --eh-on3: #0b1a33; --eh-on4: #0b1a33;
     --eh-el: #c98500; --eh-h2: #199eb0; --eh-ko: #9085e9;
     --eh-accent: #6da7ec; --eh-sel: rgba(109, 167, 236, .14);
+    --eh-lc1: #d95926; --eh-lc2: #7a3a22;
     --eh-logo-dark: block; --eh-logo-light: none;
   }
 }
@@ -54,6 +56,7 @@ html, body { margin: 0; background: #f2f4f7; }
   --eh-on1: #fff; --eh-on2: #fff; --eh-on3: #0b1a33; --eh-on4: #0b1a33;
   --eh-el: #c98500; --eh-h2: #199eb0; --eh-ko: #9085e9;
   --eh-accent: #6da7ec; --eh-sel: rgba(109, 167, 236, .14);
+    --eh-lc1: #d95926; --eh-lc2: #7a3a22;
   --eh-logo-dark: block; --eh-logo-light: none;
 }
 .eh-in { max-width: 1280px; margin-inline: auto; padding-inline: clamp(16px, 3.5vw, 48px); }
@@ -82,7 +85,7 @@ html, body { margin: 0; background: #f2f4f7; }
 .eh-tile .val { font-weight: 700; font-size: clamp(28px, 3.4vw, 40px); line-height: 1.1; letter-spacing: -.02em; font-variant-numeric: tabular-nums; min-height: 1.1em; color: var(--eh-hero-fg); }
 .eh-tile .sub { font-size: 12.5px; color: var(--eh-hero-muted); }
 .eh-hero .dash-skeleton { opacity: .5; }
-@media (max-width: 560px) { .eh-brand-meta { text-align: left; } .eh-tile + .eh-tile { border-left: 0; padding-left: 0; } .eh-tile { border-bottom: 1px solid var(--eh-hero-line); padding-bottom: 12px; } }
+@media (max-width: 560px) { .eh-lc-strip > div + div { border-left: 0; padding-left: 0; } .eh-lc-strip > div { padding-right: 0; } .eh-tile + .eh-tile { border-left: 0; padding-left: 0; } .eh-tile { border-bottom: 1px solid var(--eh-hero-line); padding-bottom: 12px; } }
 
 /* nav bar */
 .eh-nav { background: var(--color-panel); border-bottom: 1px solid var(--color-border-line); position: sticky; top: 0; z-index: 4; }
@@ -143,6 +146,19 @@ html, body { margin: 0; background: #f2f4f7; }
 .eh-src { font-size: 12px; color: var(--color-fg-muted); margin: 0; }
 
 /* footer */
+.eh-lc-strip { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 12rem), 1fr)); gap: 0; margin-top: 4px; }
+.eh-lc-strip > div { padding: 6px 20px 6px 0; }
+.eh-lc-strip > div + div { padding-left: 20px; border-left: 1px solid var(--color-border-line); }
+.eh-lc-strip .val { font-size: 34px; font-weight: 700; letter-spacing: -.02em; font-variant-numeric: tabular-nums; line-height: 1.1; display: block; }
+.eh-lc-strip .lbl { font-size: 12px; color: var(--color-fg-muted); display: flex; gap: 6px; align-items: center; }
+.eh-stack { display: flex; height: 14px; border-radius: 2px; overflow: hidden; gap: 2px; margin-top: 12px; }
+.eh-stack span { display: block; height: 100%; }
+.eh-ring { width: 10px; height: 10px; border-radius: 50%; border: 2px solid var(--eh-lc1); box-sizing: border-box; display: inline-block; flex: none; }
+.eh-gap { color: var(--color-bad); font-weight: 600; }
+.eh-seg { display: inline-flex; border: 1px solid var(--color-border-line); border-radius: 3px; overflow: hidden; }
+.eh-seg button { all: unset; cursor: pointer; font-size: 12px; font-weight: 600; padding: 6px 10px; color: var(--color-fg-muted); }
+.eh-seg button[aria-pressed="true"] { background: var(--eh-sel); color: var(--color-fg); }
+.eh-seg button:focus-visible { outline: 2px solid var(--eh-accent); }
 .eh-foot { border-top: 1px solid var(--color-border-line); background: var(--color-panel); }
 .eh-foot .eh-in { display: flex; gap: 12px 24px; align-items: center; justify-content: space-between; flex-wrap: wrap; padding-block: 18px; font-size: 12px; color: var(--color-fg-muted); }
 .eh-foot .eh-logo { height: 26px; }
@@ -164,18 +180,18 @@ html, body { margin: 0; background: #f2f4f7; }
   <div class="eh-brand"><div class="eh-in">
     <img class="eh-logo l" src="data:image/png;base64,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" alt="Hogeschool van Amsterdam">
     <img class="eh-logo d" src="data:image/png;base64,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" alt="Hogeschool van Amsterdam">
-    <div class="eh-brand-meta">Centre of Expertise City Net Zero<span>Smart Energy Systems</span></div>
   </div></div>
 
   <header class="eh-hero" id="overzicht-kop"><div class="eh-in">
-    <p class="eh-eyebrow">Monitor energiehubs</p>
-    <h1>Energiehubs in Nederland</h1>
+    <p class="eh-eyebrow">Monitor energiehubs &amp; kennisdeling</p>
+    <h1>Energiehubs &amp; Learning Communities</h1>
     <p class="eh-take dash-skeleton" id="takeaway" data-source="kpi">—</p>
     <div class="eh-tiles" id="kerncijfers">
       <div class="eh-tile"><span class="lbl">Energiehubs</span><span class="val dash-skeleton" data-source="kpi" data-field="totaal">—</span><span class="sub">projecten en initiatieven</span></div>
       <div class="eh-tile"><span class="lbl">In exploitatie</span><span class="val dash-skeleton" data-source="kpi" data-field="exploiteren">—</span><span class="sub">fase 4, hub is operationeel</span></div>
       <div class="eh-tile"><span class="lbl">In realisatie</span><span class="val dash-skeleton" data-source="kpi" data-field="realiseren">—</span><span class="sub">fase 3, in aanbouw</span></div>
       <div class="eh-tile"><span class="lbl">Nog in verkenning of ontwerp</span><span class="val dash-skeleton" data-source="kpi" data-field="vroeg_pct">—</span><span class="sub">van hubs met bekende fase</span></div>
+      <div class="eh-tile"><span class="lbl">In een learning community</span><span class="val dash-skeleton" data-source="kpi" data-field="lc_bevestigd">—</span><span class="sub">bevestigd, plus <span data-source="kpi" data-field="lc_onbevestigd">—</span> niet bevestigd</span></div>
       <div class="eh-tile"><span class="lbl">Fase onbekend</span><span class="val dash-skeleton" data-source="kpi" data-field="onbekend_pct">—</span><span class="sub">geen fase-informatie gevonden</span></div>
     </div>
   </div></header>
@@ -183,6 +199,7 @@ html, body { margin: 0; background: #f2f4f7; }
   <nav class="eh-nav"><div class="eh-in">
     <div class="eh-tabs" role="tablist" aria-label="Onderdelen">
       <button role="tab" id="tab-overzicht" data-page="overzicht" aria-selected="true">Overzicht</button>
+      <button role="tab" id="tab-lc" data-page="lc" aria-selected="false">Learning communities</button>
       <button role="tab" id="tab-regio" data-page="regio" aria-selected="false">Regio's</button>
       <button role="tab" id="tab-energie" data-page="energie" aria-selected="false">Energie &amp; data</button>
       <button role="tab" id="tab-projecten" data-page="projecten" aria-selected="false">Projecten</button>
@@ -214,15 +231,95 @@ html, body { margin: 0; background: #f2f4f7; }
     </div>
   </section>
 
+  <!-- LEARNING COMMUNITIES -->
+  <section class="eh-page" id="lc" role="tabpanel" hidden>
+    <div class="eh-card" id="lc-aansluiting">
+      <p class="eh-kicker">Verbinding</p>
+      <h3>Hoeveel hubs zijn aangesloten bij een learning community?</h3>
+      <p class="eh-note">Hubs uit de inventarisatie gekoppeld aan het brongestuurde overzicht van communities (maart 2026). Bevestigd: deelname staat in een publieke bron. Niet bevestigd: de hub ligt in het werkgebied van een community, maar deelname is niet aangetoond. Open platforms en indirecte partner-links tellen niet mee. Hubs uit het overzicht die niet in de inventarisatie staan, tellen alleen mee bij 'Communities en hun hubs'.</p>
+      <div class="eh-lc-strip">
+        <div><span class="lbl"><span class="eh-sw" style="background:var(--eh-lc1)"></span>Bevestigd</span><span class="val dash-skeleton" data-source="kpi" data-field="lc_bevestigd">—</span></div>
+        <div><span class="lbl"><span class="eh-ring"></span>Niet bevestigd</span><span class="val dash-skeleton" data-source="kpi" data-field="lc_onbevestigd">—</span></div>
+        <div><span class="lbl"><span class="eh-sw" style="background:var(--eh-lc0)"></span>Geen koppeling gevonden</span><span class="val dash-skeleton" data-source="kpi" data-field="lc_geen">—</span></div>
+        <div><span class="lbl">Aandeel gekoppeld</span><span class="val dash-skeleton" data-source="kpi" data-field="lc_pct">—</span></div>
+      </div>
+      <div class="eh-stack" id="lc-stack" data-source="kpi"></div>
+    </div>
+    <div class="eh-grid">
+      <div class="eh-card" id="lc-fase-card">
+        <p class="eh-kicker">Rijpheid</p>
+        <h3>Fase van hubs in en buiten een community</h3>
+        <p class="eh-note">Verdeling over fases (100%). Kies bovenaan type 'Bedrijventerrein' voor een eerlijke vergelijking: vrijwel alle communities richten zich op bedrijventerreinen.</p>
+        <div class="eh-legend" id="leg-lcfase"></div>
+        <div class="eh-chart dash-skeleton" id="lcfase" data-source="lc_fase" style="min-height:150px"></div>
+      </div>
+      <div class="eh-card" id="lc-comm-card">
+        <p class="eh-kicker">Per community</p>
+        <h3>Communities en hun hubs</h3>
+        <p class="eh-note">Aantal hubs per energiehub-community. Rechts: of de deelnemers openbaar zijn. De typefilter geldt hier niet.</p>
+        <div class="eh-legend"><span class="it"><span class="eh-sw" style="background:var(--eh-lc1)"></span>Bevestigd</span><span class="it"><span class="eh-sw" style="background:var(--eh-lc2)"></span>Niet bevestigd</span></div>
+        <div class="eh-chart dash-skeleton" id="lccomm" data-source="per_community" style="min-height:220px"></div>
+      </div>
+    </div>
+    <div class="eh-card" id="lc-dekking">
+      <p class="eh-kicker">Witte vlekken</p>
+      <h3>Dekking per provincie</h3>
+      <p class="eh-note">Per provincie: hoeveel hubs aan een community gekoppeld zijn, welke energiehub-communities er actief zijn, en hoeveel bredere PPS'en en learning communities er via partners raakvlak hebben. Rood: geen eigen energiehub-community. Klik op een rij om op die provincie te filteren.</p>
+      <div class="eh-tbl-wrap" style="max-height:30rem">
+        <table class="eh-tbl" id="dektbl" data-source="lc_provincie" data-row-key="sleutel">
+          <thead><tr>
+            <th data-field="provincie"><button data-k="provincie">Provincie</button></th>
+            <th class="num" data-field="hubs"><button data-k="hubs">Hubs</button></th>
+            <th class="num" data-field="bevestigd"><button data-k="bevestigd">Bevestigd</button></th>
+            <th class="num hide-sm" data-field="niet_bevestigd"><button data-k="niet_bevestigd">Niet bev.</button></th>
+            <th class="num" data-field="gekoppeld_pct"><button data-k="gekoppeld_pct">Gekoppeld</button></th>
+            <th data-field="energiehub_communities"><button data-k="energiehub_communities">Energiehub-communities</button></th>
+            <th class="num hide-sm" data-field="pps_lc"><button data-k="pps_lc">PPS/LC</button></th>
+          </tr></thead>
+          <tbody class="dash-skeleton"></tbody>
+        </table>
+      </div>
+    </div>
+    <div class="eh-card" id="lc-lijst">
+      <p class="eh-kicker">Overzicht</p>
+      <h3>Alle communities</h3>
+      <p class="eh-note">Energiehub-communities en de bredere PPS'en en learning communities met partner-overlap, met wat er over hun deelnemers bekend is. Bij een gekozen provincie: alleen communities die daar actief zijn.</p>
+      <div class="eh-controls">
+        <div class="eh-seg" role="group" aria-label="Soort community">
+          <button data-soort="" aria-pressed="true">Alle</button>
+          <button data-soort="Energiehub-community" aria-pressed="false">Energiehub-communities</button>
+          <button data-soort="PPS / learning community" aria-pressed="false">PPS / learning communities</button>
+        </div>
+      </div>
+      <div class="eh-tbl-wrap">
+        <table class="eh-tbl" id="commtbl" data-source="per_community" data-row-key="sleutel">
+          <thead><tr>
+            <th data-field="community"><button data-k="community">Community</button></th>
+            <th class="hide-sm" data-field="regio"><button data-k="regio">Regio</button></th>
+            <th class="hide-sm" data-field="focus"><button data-k="focus">Focus</button></th>
+            <th data-field="deelnemers_openbaar"><button data-k="deelnemers_openbaar">Deelnemers</button></th>
+            <th class="num" data-field="bevestigd"><button data-k="bevestigd">Bevestigd</button></th>
+            <th class="num" data-field="niet_bevestigd"><button data-k="niet_bevestigd">Niet bev.</button></th>
+          </tr></thead>
+          <tbody class="dash-skeleton"></tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
   <!-- REGIO -->
   <section class="eh-page" id="regio" role="tabpanel" hidden>
     <div class="eh-grid">
       <div class="eh-card" id="kaart-card">
         <p class="eh-kicker">Locaties</p>
         <h3>Kaart van de hubs</h3>
-        <p class="eh-note">Elke stip is een hub, gekleurd naar fase. Klik op een provincie om erop te filteren, op een stip om de projectsite te openen, of op een fase in de legenda om die aan of uit te zetten.</p>
+        <p class="eh-note">Elke stip is een hub. Kleur op fase of op koppeling aan een learning community. Klik op een provincie om erop te filteren, op een stip om de projectsite te openen, of (bij fase) op de legenda om een fase aan of uit te zetten.</p>
+        <div class="eh-controls"><div class="eh-seg" role="group" aria-label="Kleur op">
+          <button data-mode="fase" aria-pressed="true">Kleur op fase</button>
+          <button data-mode="lc" aria-pressed="false">Kleur op learning community</button>
+        </div></div>
         <div class="eh-legend" id="leg-map"></div>
-        <div class="eh-chart dash-skeleton" id="map" data-source="hubs provincies" style="min-height:300px"></div>
+        <div class="eh-chart dash-skeleton" id="map" data-source="hubs provincies hub_communities" style="min-height:300px"></div>
               </div>
       <div class="eh-card" id="provincie-card">
         <p class="eh-kicker">Per provincie</p>
@@ -292,6 +389,7 @@ html, body { margin: 0; background: #f2f4f7; }
             <th data-field="type_hub"><button data-k="type_hub">Type</button></th>
             <th data-field="fase"><button data-k="fase_nr">Fase</button></th>
             <th class="hide-sm" data-field="energiedrager"><button data-k="energiedrager">Energiedrager</button></th>
+            <th class="hide-sm" data-source="hub_communities" data-field="communities"><button data-k="communities">Learning community</button></th>
           </tr></thead>
           <tbody class="dash-skeleton"></tbody>
         </table>
@@ -301,7 +399,7 @@ html, body { margin: 0; background: #f2f4f7; }
   </div></main>
 
   <footer class="eh-foot"><div class="eh-in">
-    <span>Bron: inventarisatie energiehubs (Energiehubs_Uniform_Fases_RES_REGIO.xlsx). Provinciegrenzen: CBS/PDOK via cartomap, 2023.</span>
+    <span>Bronnen: inventarisatie energiehubs (Energiehubs_Uniform_Fases_RES_REGIO.xlsx); communities × hubs, brongestuurd overzicht maart 2026 (communities_hubs_brongestuurd.xlsx). Provinciegrenzen: CBS/PDOK via cartomap, 2023.</span>
     <span>Hogeschool van Amsterdam · Centre of Expertise City Net Zero</span>
   </div></footer>
 </div>
@@ -309,20 +407,28 @@ html, body { margin: 0; background: #f2f4f7; }
 <script>
 /* ---------- calculations ---------- */
 dash.calc('selectie', {
-  inputs: ['hubs'],
+  inputs: ['hubs', 'community_links'],
   title: 'Hubs per filterselectie',
-  description: 'Elke hub vier keer: voor alle hubs, zijn provincie, zijn type en de combinatie. Basis voor de filters.',
-  fn: (hubs) => hubs.flatMap((h) => [['Alle', 'Alle'], [h.provincie, 'Alle'], ['Alle', h.type_hub], [h.provincie, h.type_hub]]
-    .map(([prov, type]) => ({ prov, type, id: h.id, provincie: h.provincie, type_hub: h.type_hub, res_regio: h.res_regio,
+  description: 'Elke hub vier keer (alle hubs, zijn provincie, zijn type, de combinatie), met zijn sterkste koppeling aan een learning community.',
+  fn: (hubs, community_links) => {
+    const lc = new Map();
+    for (const l of community_links) {
+      if (l.hub_id == null || l.hub_id === '') continue;
+      const id = Number(l.hub_id);
+      lc.set(id, lc.get(id) === 'Bevestigd' || l.status === 'Bevestigd' ? 'Bevestigd' : 'Niet bevestigd');
+    }
+    return hubs.flatMap((h) => [['Alle', 'Alle'], [h.provincie, 'Alle'], ['Alle', h.type_hub], [h.provincie, h.type_hub]]
+    .map(([prov, type]) => ({ prov, type, id: h.id, lc_status: lc.get(Number(h.id)) || 'Geen koppeling', provincie: h.provincie, type_hub: h.type_hub, res_regio: h.res_regio,
       fase_nr: Number(h.fase_nr), n_dragers: Number(h.n_dragers), elektriciteit: Number(h.elektriciteit), warmte: Number(h.warmte),
       waterstof: Number(h.waterstof), groen_gas: Number(h.groen_gas), koude: Number(h.koude),
-      deelnemers_bekend: Number(h.deelnemers_bekend), bron: h.bron }))),
+      deelnemers_bekend: Number(h.deelnemers_bekend), bron: h.bron })));
+  },
 });
 
 dash.calc('kpi', {
   inputs: ['selectie'],
   title: 'Kerncijfers',
-  description: 'Per filterselectie: totaal, aantallen in exploitatie en realisatie, en aandelen vroege fase en onbekend.',
+  description: 'Per filterselectie: totaal, exploitatie en realisatie, aandelen vroege fase en onbekend, en koppeling aan learning communities.',
   fn: (selectie) => {
     const groups = new Map();
     for (const h of selectie) { const k = h.prov + '|' + h.type; if (!groups.has(k)) groups.set(k, []); groups.get(k).push(h); }
@@ -331,7 +437,11 @@ dash.calc('kpi', {
       const bekend = sub.length - c(0);
       return { prov: sub[0].prov, type: sub[0].type, totaal: sub.length, exploiteren: c(4), realiseren: c(3),
         vroeg_pct: bekend ? (c(1) + c(2)) / bekend : null, onbekend_pct: c(0) / sub.length,
-        provincies: new Set(sub.map((h) => h.provincie)).size };
+        provincies: new Set(sub.map((h) => h.provincie)).size,
+        lc_bevestigd: sub.filter((h) => h.lc_status === 'Bevestigd').length,
+        lc_onbevestigd: sub.filter((h) => h.lc_status === 'Niet bevestigd').length,
+        lc_geen: sub.filter((h) => h.lc_status === 'Geen koppeling').length,
+        lc_pct: sub.filter((h) => h.lc_status !== 'Geen koppeling').length / sub.length };
     });
   },
 });
@@ -436,6 +546,81 @@ dash.calc('volledigheid', {
   },
 });
 
+dash.calc('lc_fase', {
+  inputs: ['selectie'],
+  title: 'Fase naar community-koppeling',
+  description: 'Per filterselectie de fase-verdeling van hubs met een bevestigde, een niet-bevestigde of geen koppeling aan een learning community.',
+  fn: (selectie) => {
+    const groups = new Map();
+    for (const h of selectie) { const k = h.prov + '|' + h.type + '|' + h.lc_status; if (!groups.has(k)) groups.set(k, []); groups.get(k).push(h); }
+    return [...groups.values()].flatMap((sub) => {
+      const bekend = sub.filter((h) => h.fase_nr > 0).length;
+      const gevorderd = sub.filter((h) => h.fase_nr >= 3).length;
+      return [1, 2, 3, 4, 0].map((f) => {
+        const n = sub.filter((h) => h.fase_nr === f).length;
+        return { prov: sub[0].prov, type: sub[0].type, lc_status: sub[0].lc_status, fase_nr: f, n, totaal: sub.length,
+          aandeel: n / sub.length, gevorderd_pct: bekend ? gevorderd / bekend : null };
+      });
+    });
+  },
+});
+
+dash.calc('per_community', {
+  inputs: ['communities', 'community_links'],
+  title: 'Hubs per community',
+  description: 'Per provincie (of alle) de communities die daar actief zijn, met het aantal bevestigde en niet-bevestigde hubs uit het overzicht.',
+  fn: (communities, community_links) => {
+    const provs = new Set(['Alle']);
+    for (const c of communities) for (const p of String(c.provincies).split(';')) if (p && p !== 'Nationaal') provs.add(p);
+    for (const l of community_links) if (l.provincie) provs.add(l.provincie);
+    const out = [];
+    for (const prov of provs) {
+      for (const c of communities) {
+        const gebied = String(c.provincies).split(';');
+        if (prov !== 'Alle' && !gebied.includes(prov) && !gebied.includes('Nationaal')) continue;
+        const ls = community_links.filter((l) => l.community === c.community && (prov === 'Alle' || l.provincie === prov));
+        out.push({ sleutel: prov + '|' + c.community, prov, community: c.community, soort: c.soort, regio: c.regio, focus: c.focus,
+          deelnemers_openbaar: c.deelnemers_openbaar, deelname: c.deelname, kanttekening: c.kanttekening,
+          bevestigd: ls.filter((l) => l.status === 'Bevestigd').length, niet_bevestigd: ls.filter((l) => l.status === 'Niet bevestigd').length });
+      }
+    }
+    return out;
+  },
+});
+
+dash.calc('lc_provincie', {
+  inputs: ['selectie', 'communities'],
+  title: 'Community-dekking per provincie',
+  description: 'Per type (of alle) en provincie: hubs, gekoppelde hubs, de regionale energiehub-communities en het aantal PPS/learning communities met partner-overlap.',
+  fn: (selectie, communities) => {
+    const groups = new Map();
+    for (const h of selectie.filter((r) => r.prov === 'Alle')) {
+      const k = h.type + '|' + h.provincie; if (!groups.has(k)) groups.set(k, []); groups.get(k).push(h);
+    }
+    return [...groups].map(([sleutel, sub]) => {
+      const p = sub[0].provincie;
+      const actief = (c) => String(c.provincies).split(';').includes(p);
+      const eh = communities.filter((c) => c.soort === 'Energiehub-community' && actief(c)).map((c) => c.community);
+      const bev = sub.filter((h) => h.lc_status === 'Bevestigd').length;
+      const nbev = sub.filter((h) => h.lc_status === 'Niet bevestigd').length;
+      return { sleutel, type: sub[0].type, provincie: p, hubs: sub.length, bevestigd: bev, niet_bevestigd: nbev,
+        gekoppeld_pct: (bev + nbev) / sub.length, energiehub_communities: eh.join(', '),
+        pps_lc: communities.filter((c) => c.soort !== 'Energiehub-community' && actief(c)).length };
+    });
+  },
+});
+
+dash.calc('hub_communities', {
+  inputs: ['hubs', 'community_links'],
+  title: 'Communities per hub',
+  description: 'Per hub de communities waaraan hij is gekoppeld, met de status van de koppeling.',
+  fn: (hubs, community_links) => hubs.map((h) => {
+    const ls = community_links.filter((l) => l.hub_id != null && Number(l.hub_id) === Number(h.id));
+    const status = ls.some((l) => l.status === 'Bevestigd') ? 'Bevestigd' : ls.length ? 'Niet bevestigd' : 'Geen koppeling';
+    return { id: h.id, lc_status: status, communities: ls.map((l) => l.community + (l.status === 'Bevestigd' ? '' : ' (niet bevestigd)')).join(', ') };
+  }),
+});
+
 /* ---------- constants & helpers ---------- */
 const FASES = [
   { nr: 1, naam: 'Verkennen', key: 'verkennen' },
@@ -447,6 +632,7 @@ const FASES = [
 const FASE_KLEUR = ['var(--eh-f0)', 'var(--eh-f1)', 'var(--eh-f2)', 'var(--eh-f3)', 'var(--eh-f4)'];
 const colorOf = (nr) => FASE_KLEUR[nr] || FASE_KLEUR[0];
 const DRAGER_KLEUR = { Elektriciteit: 'var(--eh-el)', Warmte: 'var(--eh-wa)', Waterstof: 'var(--eh-h2)', 'Groen gas': 'var(--eh-gg)', Koude: 'var(--eh-ko)', 'Meerdere dragers': 'var(--cds-chart-muted)' };
+const LC = [{ key: 'Bevestigd', naam: 'Bevestigd', kleur: 'var(--eh-lc1)' }, { key: 'Niet bevestigd', naam: 'Niet bevestigd', kleur: 'var(--eh-lc2)' }, { key: 'Geen koppeling', naam: 'Geen koppeling gevonden', kleur: 'var(--eh-lc0)' }];
 const fmtInt = d3.format(',');
 const fmtPct = (v) => (v == null || isNaN(v) ? '–' : d3.format('.0%')(v));
 const P = () => { const p = dash.params(); return { prov: p.prov || 'Alle', type: p.type || 'Alle' }; };
@@ -502,7 +688,7 @@ const setFilter = (name, value) => {
 };
 
 /* local (non-param) state */
-const st = { fases: new Set([1, 2, 3, 4, 0]), q: '', fase: '', sortH: { k: 'naam', dir: 1 }, sortR: { k: 'totaal', dir: -1 }, page: 'overzicht' };
+const st = { mapMode: 'fase', soort: '', sortD: { k: 'hubs', dir: -1 }, sortC: { k: 'bevestigd', dir: -1 }, fases: new Set([1, 2, 3, 4, 0]), q: '', fase: '', sortH: { k: 'naam', dir: 1 }, sortR: { k: 'totaal', dir: -1 }, page: 'overzicht' };
 
 /* ---------- filters bar ---------- */
 function drawFilters() {
@@ -525,7 +711,7 @@ function drawHeader() {
   const p = P();
   const take = document.getElementById('takeaway');
   const row = k.status === 'ok' ? k.data.find((r) => r.prov === p.prov && r.type === p.type) : null;
-  document.querySelectorAll('.eh-tile [data-source="kpi"]').forEach((el) => {
+  document.querySelectorAll('.eh-tile [data-source="kpi"], .eh-lc-strip [data-source="kpi"]').forEach((el) => {
     el.setAttribute('data-where', where(p));
     if (k.status === 'loading') return;
     el.classList.remove('dash-skeleton');
@@ -540,12 +726,13 @@ function drawHeader() {
   const b = (txt) => { const e = document.createElement('b'); e.textContent = txt; return e; };
   if (p.prov === 'Alle' && p.type === 'Alle') {
     take.append('Van de ', b(fmtInt(row.totaal)), ' energiehubs in ', b(fmtInt(row.provincies)), ' provincies zit ', b(fmtPct(row.vroeg_pct)),
-      ' (met bekende fase) nog in verkenning of ontwerp; ', b(fmtInt(row.exploiteren)), ' hubs zijn al in exploitatie. Van ',
-      b(fmtPct(row.onbekend_pct)), ' is de fase onbekend: daar valt voor het overzicht de meeste winst te halen.');
+      ' (met bekende fase) nog in verkenning of ontwerp; ', b(fmtInt(row.exploiteren)), ' zijn al in exploitatie. ',
+      b(fmtInt(row.lc_bevestigd)), ' hubs nemen aantoonbaar deel aan een learning community of CoP, nog eens ', b(fmtInt(row.lc_onbevestigd)),
+      ' mogelijk. Voor ', b(fmtPct(1 - row.lc_pct)), ' is geen koppeling gevonden.');
   } else {
     take.append('Selectie ', b(selLabel(p)), ': ', b(fmtInt(row.totaal)), ' hubs, waarvan ', b(fmtInt(row.exploiteren)), ' in exploitatie en ',
       b(fmtInt(row.realiseren)), ' in realisatie. ', b(fmtPct(row.vroeg_pct)), ' van de hubs met bekende fase zit nog in verkenning of ontwerp; van ',
-      b(fmtPct(row.onbekend_pct)), ' is de fase onbekend.');
+      b(fmtPct(row.onbekend_pct)), ' is de fase onbekend. ', b(fmtInt(row.lc_bevestigd)), ' hubs zitten aantoonbaar in een learning community.');
   }
 }
 
@@ -686,7 +873,15 @@ function drawByProv() {
 function drawMap() {
   const el = document.getElementById('map');
   if (!visible(el)) return;
-  legend(document.getElementById('leg-map'), FASES, st.fases, (nr) => { st.fases.has(nr) ? st.fases.delete(nr) : st.fases.add(nr); drawMap(); });
+  const legEl = document.getElementById('leg-map');
+  if (st.mapMode === 'fase') legend(legEl, FASES, st.fases, (nr) => { st.fases.has(nr) ? st.fases.delete(nr) : st.fases.add(nr); drawMap(); });
+  else {
+    legEl.replaceChildren(...LC.map((c) => { const it = document.createElement('span'); it.className = 'it';
+      const sw = document.createElement('span'); sw.className = c.key === 'Niet bevestigd' ? 'eh-ring' : 'eh-sw'; if (c.key !== 'Niet bevestigd') sw.style.background = c.kleur;
+      const t = document.createElement('span'); t.textContent = c.naam; it.append(sw, t); return it; }));
+  }
+  const hc = dash.data('hub_communities');
+  const lcOf = new Map(hc.status === 'ok' ? hc.data.map((r) => [Number(r.id), r]) : []);
   const d = dash.data('hubs');
   const g = dash.data('provincies');
   reset(el);
@@ -696,7 +891,9 @@ function drawMap() {
   const p = P();
   const shapes = g.status === 'ok' ? g.data.map((r) => ({ provincie: r.provincie, geo: { type: 'Feature', properties: {}, geometry: typeof r.geometry === 'string' ? JSON.parse(r.geometry) : r.geometry } })) : [];
   const all = d.data.filter((h) => h.lat != null && h.lon != null);
-  const rows = all.filter((h) => (p.prov === 'Alle' || h.provincie === p.prov) && (p.type === 'Alle' || h.type_hub === p.type) && st.fases.has(Number(h.fase_nr)));
+  const rows = all.filter((h) => (p.prov === 'Alle' || h.provincie === p.prov) && (p.type === 'Alle' || h.type_hub === p.type) && (st.mapMode !== 'fase' || st.fases.has(Number(h.fase_nr))));
+  const lcRank = { 'Geen koppeling': 0, 'Niet bevestigd': 1, Bevestigd: 2 };
+  const lcSt = (h) => (lcOf.get(Number(h.id)) || {}).lc_status || 'Geen koppeling';
   const W = el.clientWidth;
   const H = Math.round(Math.min(640, Math.max(300, W * 1.15)));
   const fitTo = shapes.length ? { type: 'FeatureCollection', features: shapes.map((s) => s.geo) } : { type: 'MultiPoint', coordinates: all.map((h) => [Number(h.lon), Number(h.lat)]) };
@@ -710,10 +907,17 @@ function drawMap() {
       .attr('stroke', p.prov === s.provincie ? 'var(--eh-accent)' : 'var(--cds-chart-axis)').attr('stroke-width', p.prov === s.provincie ? 1.5 : 0.7)
       .on('click', () => setFilter('prov', s.provincie));
   });
-  const pts = rows.map((h) => ({ h, p: proj([Number(h.lon), Number(h.lat)]) })).sort((a, b) => Number(a.h.fase_nr) - Number(b.h.fase_nr));
-  svg.append('g').style('pointer-events', 'none').selectAll('circle').data(pts).join('circle')
-    .attr('cx', (o) => o.p[0]).attr('cy', (o) => o.p[1]).attr('r', 4).attr('fill', (o) => colorOf(Number(o.h.fase_nr)))
-    .attr('stroke', 'var(--color-panel)').attr('stroke-width', 1);
+  const pts = rows.map((h) => ({ h, p: proj([Number(h.lon), Number(h.lat)]) }))
+    .sort((a, b) => (st.mapMode === 'fase' ? Number(a.h.fase_nr) - Number(b.h.fase_nr) : lcRank[lcSt(a.h)] - lcRank[lcSt(b.h)]));
+  const dots = svg.append('g').style('pointer-events', 'none').selectAll('circle').data(pts).join('circle')
+    .attr('cx', (o) => o.p[0]).attr('cy', (o) => o.p[1]);
+  if (st.mapMode === 'fase') dots.attr('r', 4).attr('fill', (o) => colorOf(Number(o.h.fase_nr))).attr('stroke', 'var(--color-panel)').attr('stroke-width', 1);
+  else dots.each(function (o) {
+    const s2 = lcSt(o.h); const c = d3.select(this);
+    if (s2 === 'Bevestigd') c.attr('r', 5).attr('fill', 'var(--eh-lc1)').attr('stroke', 'var(--color-panel)').attr('stroke-width', 1);
+    else if (s2 === 'Niet bevestigd') c.attr('r', 4.5).attr('fill', 'var(--color-panel)').attr('stroke', 'var(--eh-lc1)').attr('stroke-width', 2);
+    else c.attr('r', 3).attr('fill', 'var(--eh-lc0)');
+  });
   const hl = svg.append('circle').attr('r', 7).attr('fill', 'none').attr('stroke', 'var(--color-fg)').attr('stroke-width', 1.5).style('display', 'none').style('pointer-events', 'none');
   const del = pts.length ? d3.Delaunay.from(pts, (o) => o.p[0], (o) => o.p[1]) : null;
   const near = (ev) => { if (!del) return null; const [mx, my] = d3.pointer(ev, svg.node()); const o = pts[del.find(mx, my)]; return Math.hypot(o.p[0] - mx, o.p[1] - my) <= 10 ? o : null; };
@@ -722,7 +926,9 @@ function drawMap() {
     if (!o) { hl.style('display', 'none'); return hideTip(el); }
     hl.style('display', null).attr('cx', o.p[0]).attr('cy', o.p[1]);
     const [bx, by] = d3.pointer(ev, el);
-    showTip(el, bx, by, o.h.naam, [{ color: colorOf(Number(o.h.fase_nr)), text: o.h.fase }, { text: `${o.h.plaats} · ${o.h.provincie}` }, { text: o.h.type_hub + (o.h.energiedrager ? ' · ' + o.h.energiedrager : '') }]);
+    const lcr = lcOf.get(Number(o.h.id));
+    showTip(el, bx, by, o.h.naam, [{ color: colorOf(Number(o.h.fase_nr)), text: o.h.fase }, { text: `${o.h.plaats} · ${o.h.provincie}` }, { text: o.h.type_hub + (o.h.energiedrager ? ' · ' + o.h.energiedrager : '') }]
+      .concat(lcr && lcr.communities ? [{ color: 'var(--eh-lc1)', text: lcr.communities }] : []));
   }).on('mouseleave', () => { hl.style('display', 'none'); hideTip(el); })
     .on('click', (ev) => {
       const o = near(ev);
@@ -809,7 +1015,9 @@ function drawHubs() {
   const p = P();
   const fs = document.getElementById('f-fase');
   if (document.activeElement !== fs) { fs.replaceChildren(new Option('Alle fases', ''), ...FASES.map((f) => new Option(f.naam, String(f.nr)))); fs.value = st.fase; }
-  const all = d.data;
+  const hcd = dash.data('hub_communities');
+  const lcOfH = new Map(hcd.status === 'ok' ? hcd.data.map((r) => [Number(r.id), r]) : []);
+  const all = d.data.map((h) => ({ ...h, communities: (lcOfH.get(Number(h.id)) || {}).communities || '' }));
   const rows = sortRows(all.filter((h) => (p.prov === 'Alle' || h.provincie === p.prov) && (p.type === 'Alle' || h.type_hub === p.type) &&
     (st.fase === '' || String(h.fase_nr) === st.fase) && (!st.q || (h.naam + ' ' + h.plaats).toLowerCase().includes(st.q.toLowerCase()))), st.sortH);
   document.getElementById('f-count').textContent = `${fmtInt(rows.length)} van ${fmtInt(all.length)} projecten`;
@@ -826,8 +1034,158 @@ function drawHubs() {
     const sw = document.createElement('span'); sw.className = 'eh-sw'; sw.style.background = colorOf(Number(h.fase_nr));
     pill.append(sw, h.fase); f.appendChild(pill);
     const e = tr.insertCell(); e.className = 'hide-sm'; e.textContent = h.energiedrager || '';
+    const lcc = tr.insertCell(); lcc.className = 'hide-sm'; lcc.textContent = (lcOfH.get(Number(h.id)) || {}).communities || '';
   }
   markSort(tbl, st.sortH);
+}
+
+/* ---------- learning communities ---------- */
+function drawLcStack() {
+  const el = document.getElementById('lc-stack');
+  if (!visible(el)) return;
+  const k = dash.data('kpi');
+  el.replaceChildren();
+  if (k.status !== 'ok') return;
+  const p = P();
+  const row = k.data.find((r) => r.prov === p.prov && r.type === p.type);
+  if (!row) return;
+  for (const [v, c] of [[row.lc_bevestigd, 'var(--eh-lc1)'], [row.lc_onbevestigd, 'var(--eh-lc2)'], [row.lc_geen, 'var(--eh-lc0)']]) {
+    if (!v) continue;
+    const s2 = document.createElement('span'); s2.style.flex = String(v); s2.style.background = c; el.appendChild(s2);
+  }
+}
+
+function drawLcFase() {
+  const el = document.getElementById('lcfase');
+  if (!visible(el)) return;
+  legend(document.getElementById('leg-lcfase'), FASES, null, null);
+  const d = dash.data('lc_fase');
+  reset(el);
+  if (d.status === 'error') return failed(el);
+  if (d.status !== 'ok') return;
+  el.classList.remove('dash-skeleton');
+  const p = P();
+  const rows = d.data.filter((r) => r.prov === p.prov && r.type === p.type);
+  if (!rows.length) return empty(el, 'Geen hubs in deze selectie.');
+  const groups = LC.map((g) => ({ ...g, rows: rows.filter((r) => r.lc_status === g.key) })).filter((g) => g.rows.length);
+  const W = el.clientWidth;
+  const svg = d3.select(el).append('svg').attr('width', '100%');
+  const labs = groups.map((g) => `${g.naam} (${fmtInt(g.rows[0].totaal)})`);
+  const narrow = W < 560;
+  const lw = narrow ? 0 : Math.ceil(measure(svg, labs)) + 12;
+  const rw = narrow ? 0 : Math.ceil(measure(svg, ['100% gevorderd'])) + 8;
+  const bh = 26, gap = narrow ? 34 : 22;
+  const H = groups.length * (bh + gap) + 4;
+  svg.attr('viewBox', `0 0 ${W} ${H}`).attr('height', H);
+  const x = d3.scaleLinear([0, 1], [lw, Math.max(lw + 60, W - rw)]);
+  groups.forEach((g, i) => {
+    const y = i * (bh + gap) + (narrow ? 22 : 14);
+    if (narrow) svg.append('text').attr('class', 'strong').attr('x', 0).attr('y', y - 7).text(`${labs[i]} · ${fmtPct(g.rows[0].gevorderd_pct)} gevorderd`);
+    else svg.append('text').attr('class', 'strong').attr('x', lw - 10).attr('y', y + bh / 2).attr('dy', '0.35em').attr('text-anchor', 'end').text(labs[i]);
+    let acc = 0;
+    for (const f of FASES) {
+      const r = g.rows.find((q) => q.fase_nr === f.nr); if (!r || !r.n) continue;
+      const x0 = x(acc), x1 = x(acc + r.aandeel); acc += r.aandeel;
+      svg.append('rect').attr('x', x0).attr('y', y).attr('width', Math.max(0, x1 - x0 - 2)).attr('height', bh).attr('fill', colorOf(f.nr))
+        .on('mousemove', (ev) => { const [mx, my] = d3.pointer(ev, el); showTip(el, mx, my, g.naam, [{ color: colorOf(f.nr), text: `${f.naam}: ${fmtInt(r.n)} (${fmtPct(r.aandeel)})` }]); })
+        .on('mouseleave', () => hideTip(el));
+      if (x1 - x0 > 34) svg.append('text').attr('x', (x0 + x1) / 2).attr('y', y + bh / 2).attr('dy', '0.35em').attr('text-anchor', 'middle').style('fill', `var(--eh-on${f.nr})`).style('pointer-events', 'none').text(fmtPct(r.aandeel));
+    }
+    if (!narrow) svg.append('text').attr('class', 'strong').attr('x', W - 2).attr('y', y + bh / 2).attr('dy', '0.35em').attr('text-anchor', 'end').text(fmtPct(g.rows[0].gevorderd_pct) + ' gevorderd');
+  });
+}
+
+function drawLcComm() {
+  const el = document.getElementById('lccomm');
+  if (!visible(el)) return;
+  const d = dash.data('per_community');
+  reset(el);
+  if (d.status === 'error') return failed(el);
+  if (d.status !== 'ok') return;
+  el.classList.remove('dash-skeleton');
+  const p = P();
+  const rows = d.data.filter((r) => r.prov === p.prov && r.soort === 'Energiehub-community')
+    .sort((a, b) => (b.bevestigd + b.niet_bevestigd) - (a.bevestigd + a.niet_bevestigd) || a.community.localeCompare(b.community, 'nl'));
+  if (!rows.length) return empty(el, 'Geen energiehub-community actief in deze provincie.');
+  const W = el.clientWidth;
+  const svg = d3.select(el).append('svg').attr('width', '100%');
+  const narrow = W < 560;
+  const lw = narrow ? 0 : Math.ceil(measure(svg, rows.map((r) => r.community))) + 10;
+  const tag = (r) => ({ Ja: 'openbaar', Deels: 'deels openbaar', Nee: 'niet openbaar', Open: 'open platform' }[r.deelnemers_openbaar] || r.deelnemers_openbaar);
+  const rw = Math.ceil(measure(svg, rows.map(tag))) + 8;
+  const tw = Math.ceil(measure(svg, ['000'])) + 6;
+  const bh = 16, gap = narrow ? 26 : 10;
+  const H = rows.length * (bh + gap) + (narrow ? 18 : 0);
+  svg.attr('viewBox', `0 0 ${W} ${H}`).attr('height', H);
+  const max = d3.max(rows, (r) => r.bevestigd + r.niet_bevestigd) || 1;
+  const x = d3.scaleLinear([0, max], [0, Math.max(30, W - lw - rw - tw - 6)]);
+  rows.forEach((r, i) => {
+    const y = i * (bh + gap) + (narrow ? 18 : 0);
+    if (narrow) svg.append('text').attr('class', 'strong').attr('x', 0).attr('y', y - 6).text(r.community);
+    else svg.append('text').attr('class', 'strong').attr('x', lw - 10).attr('y', y + bh / 2).attr('dy', '0.35em').attr('text-anchor', 'end').text(r.community);
+    if (r.bevestigd) svg.append('rect').attr('x', lw).attr('y', y).attr('height', bh).attr('width', Math.max(0, x(r.bevestigd) - (r.niet_bevestigd ? 2 : 0))).attr('fill', 'var(--eh-lc1)');
+    if (r.niet_bevestigd) svg.append('rect').attr('x', lw + x(r.bevestigd)).attr('y', y).attr('height', bh).attr('width', x(r.niet_bevestigd)).attr('fill', 'var(--eh-lc2)');
+    const tot = r.bevestigd + r.niet_bevestigd;
+    svg.append('text').attr('x', lw + x(tot) + 6).attr('y', y + bh / 2).attr('dy', '0.35em').text(tot ? fmtInt(tot) : '–');
+    svg.append('text').attr('x', W - 2).attr('y', y + bh / 2).attr('dy', '0.35em').attr('text-anchor', 'end')
+      .style('fill', r.deelnemers_openbaar === 'Nee' ? 'var(--color-bad)' : null).text(tag(r));
+    svg.append('rect').attr('x', 0).attr('y', y - 4).attr('width', W).attr('height', bh + 8).attr('fill', 'transparent')
+      .on('mousemove', (ev) => { const [mx, my] = d3.pointer(ev, el); showTip(el, mx, my, r.community, [{ color: 'var(--eh-lc1)', text: `Bevestigd: ${fmtInt(r.bevestigd)}` }, { color: 'var(--eh-lc2)', text: `Niet bevestigd: ${fmtInt(r.niet_bevestigd)}` }, { text: r.deelname }].concat(r.kanttekening ? [{ text: r.kanttekening }] : [])); })
+      .on('mouseleave', () => hideTip(el));
+  });
+}
+
+function drawDekking() {
+  const tbl = document.getElementById('dektbl');
+  if (!visible(tbl)) return;
+  const body = tbl.tBodies[0];
+  const d = dash.data('lc_provincie');
+  if (d.status === 'error') return tblFail(body, 7);
+  if (d.status !== 'ok') return;
+  body.classList.remove('dash-skeleton');
+  const p = P();
+  const rows = d.data.filter((r) => r.type === p.type);
+  body.replaceChildren();
+  for (const r of sortRows(rows, st.sortD)) {
+    const tr = body.insertRow(); tr.dataset.key = r.sleutel; tr.style.cursor = 'pointer';
+    if (p.prov === r.provincie) tr.style.background = 'var(--eh-sel)';
+    tr.addEventListener('click', () => setFilter('prov', r.provincie));
+    tr.insertCell().textContent = r.provincie;
+    const a = tr.insertCell(); a.className = 'num'; a.textContent = fmtInt(r.hubs);
+    const b2 = tr.insertCell(); b2.className = 'num'; b2.textContent = fmtInt(r.bevestigd);
+    const c = tr.insertCell(); c.className = 'num hide-sm'; c.textContent = fmtInt(r.niet_bevestigd);
+    const g = tr.insertCell(); g.className = 'num';
+    const bar = document.createElement('span'); bar.className = 'eh-inbar'; bar.style.background = 'var(--eh-lc1)'; bar.style.width = Math.round(48 * r.gekoppeld_pct) + 'px';
+    g.append(bar, fmtPct(r.gekoppeld_pct));
+    const e = tr.insertCell();
+    if (r.energiehub_communities) e.textContent = r.energiehub_communities; else { const s2 = document.createElement('span'); s2.className = 'eh-gap'; s2.textContent = 'Geen'; e.appendChild(s2); }
+    const f = tr.insertCell(); f.className = 'num hide-sm'; f.textContent = fmtInt(r.pps_lc);
+  }
+  markSort(tbl, st.sortD);
+}
+
+function drawCommTbl() {
+  const tbl = document.getElementById('commtbl');
+  if (!visible(tbl)) return;
+  const body = tbl.tBodies[0];
+  const d = dash.data('per_community');
+  if (d.status === 'error') return tblFail(body, 6);
+  if (d.status !== 'ok') return;
+  body.classList.remove('dash-skeleton');
+  const p = P();
+  const rows = d.data.filter((r) => r.prov === p.prov && (!st.soort || r.soort === st.soort));
+  body.replaceChildren();
+  for (const r of sortRows(rows, st.sortC)) {
+    const tr = body.insertRow(); tr.dataset.key = r.sleutel;
+    const n = tr.insertCell(); const nm = document.createElement('div'); nm.textContent = r.community; nm.style.fontWeight = '600';
+    const sb = document.createElement('div'); sb.textContent = r.soort; sb.style.color = 'var(--color-fg-muted)'; sb.style.fontSize = '12px'; n.append(nm, sb);
+    const rg = tr.insertCell(); rg.className = 'hide-sm'; rg.textContent = r.regio;
+    const fc = tr.insertCell(); fc.className = 'hide-sm'; fc.textContent = r.focus;
+    const dl = tr.insertCell(); dl.textContent = r.deelnemers_openbaar; if (r.deelnemers_openbaar === 'Nee') dl.style.color = 'var(--color-bad)';
+    const b2 = tr.insertCell(); b2.className = 'num'; b2.textContent = fmtInt(r.bevestigd);
+    const c = tr.insertCell(); c.className = 'num'; c.textContent = fmtInt(r.niet_bevestigd);
+  }
+  markSort(tbl, st.sortC);
 }
 
 /* ---------- render all ---------- */
@@ -842,10 +1200,15 @@ function render() {
   barList('carriers', 'dragers', 'drager', 'n', (r) => `${fmtInt(r.n)} · ${fmtPct(r.aandeel)}`, (r) => DRAGER_KLEUR[r.drager] || 'var(--cds-chart-muted)');
   barList('complete', 'volledigheid', 'veld', 'aandeel', (r) => `${fmtPct(r.aandeel)} (${fmtInt(r.bekend)})`, (r) => (r.aandeel < 0.5 ? 'var(--cds-chart-status-critical)' : 'var(--eh-f2)'));
   drawHubs();
+  drawLcStack();
+  drawLcFase();
+  drawLcComm();
+  drawDekking();
+  drawCommTbl();
 }
 
 /* ---------- tabs ---------- */
-const PAGES = ['overzicht', 'regio', 'energie', 'projecten'];
+const PAGES = ['overzicht', 'lc', 'regio', 'energie', 'projecten'];
 function showPage(id) {
   if (!PAGES.includes(id)) return;
   st.page = id;
@@ -873,6 +1236,24 @@ document.querySelector('#restbl thead').addEventListener('click', (e) => {
   const numeric = b.dataset.k !== 'res_regio';
   st.sortR = { k: b.dataset.k, dir: st.sortR.k === b.dataset.k ? -st.sortR.dir : (numeric ? -1 : 1) }; drawRes();
 });
+
+document.querySelectorAll('[data-mode]').forEach((b) => b.addEventListener('click', () => {
+  st.mapMode = b.dataset.mode;
+  document.querySelectorAll('[data-mode]').forEach((x) => x.setAttribute('aria-pressed', String(x === b)));
+  drawMap();
+}));
+document.querySelectorAll('[data-soort]').forEach((b) => b.addEventListener('click', () => {
+  st.soort = b.dataset.soort;
+  document.querySelectorAll('[data-soort]').forEach((x) => x.setAttribute('aria-pressed', String(x === b)));
+  drawCommTbl();
+}));
+const sorter = (sel, key, draw, textKeys) => document.querySelector(sel + ' thead').addEventListener('click', (e) => {
+  const b = e.target.closest('button'); if (!b) return;
+  const k = b.dataset.k; const cur = st[key];
+  st[key] = { k, dir: cur.k === k ? -cur.dir : (textKeys.includes(k) ? 1 : -1) }; draw();
+});
+sorter('#dektbl', 'sortD', drawDekking, ['provincie', 'energiehub_communities']);
+sorter('#commtbl', 'sortC', drawCommTbl, ['community', 'regio', 'focus', 'deelnemers_openbaar']);
 
 dash.onData(render);
 const start = location.hash.slice(1);
