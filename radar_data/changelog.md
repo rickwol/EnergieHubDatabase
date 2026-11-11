@@ -1,6 +1,160 @@
 # Radar-update 2026-11-11
 
-- Radar bevat **0** initiatieven
-- Dataset telt nu **508** hubs (+0 nieuw)
+- Radar bevat **289** initiatieven
+- Dataset telt nu **625** hubs (+117 nieuw)
 
-_Geen wijzigingen t.o.v. de huidige dataset._
+## 117 nieuwe hubs
+- **Zeewolde Zuidlob** — Zeewolde (Flevoland) | Fase 1: Verkennen | 12 bedr | Enexis | Actief _(GPS handmatig aanvullen)_
+- **Terschelling** — West (Friesland) | Fase 1: Verkennen | 0 bedr | Liander | Actief _(GPS handmatig aanvullen)_
+- **Project HAZ** — Herveld (Gelderland) | Fase 1: Verkennen | 3 bedr | Liander | Actief _(GPS handmatig aanvullen)_
+- **Arriva Doetinchem** — Doetinchem (Gelderland) | Fase 1: Verkennen | 3 bedr | Liander | Actief _(GPS handmatig aanvullen)_
+- **Oldebroek Laagveen** — Oldebroek (Gelderland) | Fase 1: Verkennen | 3 bedr | Liander | Actief _(GPS handmatig aanvullen)_
+- **Noviotech Campus** — Nijmegen (Gelderland) | Fase 1: Verkennen | 3 bedr | Liander | Actief _(GPS handmatig aanvullen)_
+- **Zevenaar 7Poort II** — Zevenaar (Gelderland) | Fase 1: Verkennen | 3 bedr | Liander | Actief _(GPS handmatig aanvullen)_
+- **Lingezegen Energy** — Bemmel (Gelderland) | Fase 3: Realiseren | 10 bedr | Liander | Actief _(GPS handmatig aanvullen)_
+- **Storteboom Putten / Arla Nijkerk** — Putten (Gelderland) | Fase 1: Verkennen | 3 bedr | Liander | Actief _(GPS handmatig aanvullen)_
+- **Arkervaart** — Nijkerk (Gelderland) | Fase 1: Verkennen | 3 bedr | Liander | Actief _(GPS handmatig aanvullen)_
+- **Fastned** — Beesd (Gelderland) | Fase 1: Verkennen | 3 bedr | Liander | Actief _(GPS handmatig aanvullen)_
+- **Bedrijventerrein Poort van Midden Gelderland** — Heteren (Gelderland) | Fase 1: Verkennen | 0 bedr | Liander | Actief _(GPS handmatig aanvullen)_
+- **Porsche** — Heteren (Gelderland) | Fase 1: Verkennen | 0 bedr | Liander | Actief _(GPS handmatig aanvullen)_
+- **COA Wageningen** — Wageningen (Gelderland) | Fase 1: Verkennen | 0 bedr | Liander | Actief _(GPS handmatig aanvullen)_
+- **Aalsvoort** — Lochem (Gelderland) | Fase 1: Verkennen | 0 bedr | Liander | Actief _(GPS handmatig aanvullen)_
+- **'s-Heerenberg** — 's-Heerenberg (Gelderland) | Fase 1: Verkennen | 0 bedr | Liander | Actief _(GPS handmatig aanvullen)_
+- **De Flier** — Nijkerk (Gelderland) | Fase 1: Verkennen | 0 bedr | Liander | Actief _(GPS handmatig aanvullen)_
+- **Medel (bestaand)** — Tiel (Gelderland) | Fase 1: Verkennen | 0 bedr | Liander | Actief _(GPS handmatig aanvullen)_
+- **De Kolk** — Nunspeet (Gelderland) | Fase 1: Verkennen | 0 bedr | Liander | Actief _(GPS handmatig aanvullen)_
+- **Het Zwarte Land** — Scherpenzeel (Gelderland) | Fase 1: Verkennen | 0 bedr | Liander | Actief _(GPS handmatig aanvullen)_
+- **Teuge** — Teuge (Gelderland) | Fase 1: Verkennen | 0 bedr | Liander | Actief _(GPS handmatig aanvullen)_
+- **Medel (nieuw)** — Tiel (Gelderland) | Fase 4: Exploiteren | 0 bedr | Liander | Actief _(GPS handmatig aanvullen)_
+- **Eekterveld** — Vaassen (Gelderland) | Fase 3: Realiseren | 0 bedr | Liander | Actief _(GPS handmatig aanvullen)_
+- **VIP** — Varsseveld (Gelderland) | Fase 1: Verkennen | 0 bedr | Liander | Actief _(GPS handmatig aanvullen)_
+- **Hofskamp** — Varsseveld (Gelderland) | Fase 1: Verkennen | 0 bedr | Liander | Actief _(GPS handmatig aanvullen)_
+- **Bijsterhuizen** — Wijchen (Gelderland) | Fase 1: Verkennen | 0 bedr | Liander | Actief _(GPS handmatig aanvullen)_
+- **Veeneslat (noord & zuid)** — Winterswijk (Gelderland) | Fase 1: Verkennen | 0 bedr | Liander | Actief _(GPS handmatig aanvullen)_
+- **Nieuw BT** — Hedel (Gelderland) | Fase 1: Verkennen | 0 bedr | Liander | Actief _(GPS handmatig aanvullen)_
+- **H2O** — Hattem (Gelderland) | Fase 2: Plannen & Ontwerpen | 0 bedr | Liander | Actief _(GPS handmatig aanvullen)_
+- **Harderwijk Lorentz I+II** — Harderwijk (Gelderland) | Fase 1: Verkennen | 0 bedr | Liander | Actief _(GPS handmatig aanvullen)_
+- **De Laarberg Groenlo** — Groenlo (Gelderland) | Fase 2: Plannen & Ontwerpen | 0 bedr | Liander | Actief _(GPS handmatig aanvullen)_
+- **Avisolar Watthub** — Geldermalsen (Gelderland) | Fase 2: Plannen & Ontwerpen | 0 bedr | Liander | Actief _(GPS handmatig aanvullen)_
+- **Ede Food&Business Park** — Ede (Gelderland) | Fase 1: Verkennen | 0 bedr | Liander | Actief _(GPS handmatig aanvullen)_
+- **Bedrijventerrein A12** — Ede (Gelderland) | Fase 1: Verkennen | 0 bedr | Liander | Actief _(GPS handmatig aanvullen)_
+- **Centerpoort-Noord 2** — Duiven (Gelderland) | Fase 1: Verkennen | 0 bedr | Liander | Actief _(GPS handmatig aanvullen)_
+- **Westerhout Zuid** — Druten (Gelderland) | Fase 1: Verkennen | 0 bedr | Liander | Actief _(GPS handmatig aanvullen)_
+- **Verheulsweide/Wijnbergen** — Doetinchem (Gelderland) | Fase 1: Verkennen | 0 bedr | Liander | Actief _(GPS handmatig aanvullen)_
+- **Spoorzone** — Doetinchem (Gelderland) | Fase 1: Verkennen | 0 bedr | Liander | Actief _(GPS handmatig aanvullen)_
+- **Bedrijvenpark A18** — Doetinchem (Gelderland) | Fase 1: Verkennen | 1 bedr | Liander | Actief _(GPS handmatig aanvullen)_
+- **De Huet & Keppelseweg** — Doetinchem (Gelderland) | Fase 1: Verkennen | 0 bedr | Liander | Actief _(GPS handmatig aanvullen)_
+- **Beinum** — Doesburg (Gelderland) | Fase 1: Verkennen | 0 bedr | Liander | Actief _(GPS handmatig aanvullen)_
+- **Pavijen** — Culemborg (Gelderland) | Fase 1: Verkennen | 0 bedr | Liander | Actief _(GPS handmatig aanvullen)_
+- **Powerhub** — Elst (Gelderland) | Fase 2: Plannen & Ontwerpen | 8 bedr | Liander | Actief _(GPS handmatig aanvullen)_
+- **TPN-West Nijmegen** — Nijmegen (Gelderland) | Fase 3: Realiseren | 0 bedr | Liander | Actief _(GPS handmatig aanvullen)_
+- **Innofase Duiven** — Duiven (Gelderland) | Fase 3: Realiseren | 7 bedr | Liander | Actief _(GPS handmatig aanvullen)_
+- **SEH Zutphen De Mars** — Zutphen (Gelderland) | Fase 2: Plannen & Ontwerpen | 5 bedr | Liander | Actief _(GPS handmatig aanvullen)_
+- **Kempen/Kanaalzone** — Weert (Limburg) | Fase 1: Verkennen | 3 bedr | Enexis | Actief _(GPS handmatig aanvullen)_
+- **Kampershoek** — Weert (Limburg) | Fase 1: Verkennen | 12 bedr | Enexis | Actief _(GPS handmatig aanvullen)_
+- **Smakterheide** — Venray (Limburg) | Fase 1: Verkennen | 14 bedr | Enexis | Actief _(GPS handmatig aanvullen)_
+- **Bosscherveld** — Maastricht (Limburg) | Fase 1: Verkennen | 5 bedr | Enexis | Actief _(GPS handmatig aanvullen)_
+- **Randwyck** — Maastricht (Limburg) | Fase 1: Verkennen | 2 bedr | Enexis | Actief _(GPS handmatig aanvullen)_
+- **Energiehub Californie** — Venlo (Limburg) | Fase 2: Plannen & Ontwerpen | 6 bedr | Enexis | On hold _(GPS handmatig aanvullen)_
+- **De Beitel** — Heerlen (Limburg) | Fase 1: Verkennen | 0 bedr | Enexis | Gestopt _(GPS handmatig aanvullen)_
+- **De Koumen** — Heerlen (Limburg) | Fase 2: Plannen & Ontwerpen | 5 bedr | Enexis | Actief _(GPS handmatig aanvullen)_
+- **Beatrixhaven** — Maastricht (Limburg) | Fase 3: Realiseren | 5 bedr | Enexis | Gestopt _(GPS handmatig aanvullen)_
+- **3H** — Heijen (Limburg) | Fase 1: Verkennen | 3 bedr | Enexis | Actief _(GPS handmatig aanvullen)_
+- **De Wolfskoul** — Susteren (Limburg) | Fase 1: Verkennen | 3 bedr | Enexis | Gestopt _(GPS handmatig aanvullen)_
+- **Kempen / Kanaalzone** — Weert (Limburg) | Fase 1: Verkennen | 10 bedr | Enexis | Actief _(GPS handmatig aanvullen)_
+- **Haalbaarheidsstudie Automotive Campus** — Helmond (Noord-Brabant) | Fase 1: Verkennen | 5 bedr | Enexis | Actief _(GPS handmatig aanvullen)_
+- **Verkenning Energiehub Breda International Airport** — Bosschenhoofd (Noord-Brabant) | Fase 1: Verkennen | 2 bedr | Enexis | Actief _(GPS handmatig aanvullen)_
+- **Haalbaarbaarheidstudie energiehub** — Asten (Noord-Brabant) | Fase 2: Plannen & Ontwerpen | 5 bedr | Enexis | Gestopt _(GPS handmatig aanvullen)_
+- **REC Rucphen** — Rucphen (Noord-Brabant) | Fase 2: Plannen & Ontwerpen | 6 bedr | Enexis | Actief _(GPS handmatig aanvullen)_
+- **Energiehub Haven 7** — Waalwijk (Noord-Brabant) | Fase 2: Plannen & Ontwerpen | 6 bedr | Enexis | Actief _(GPS handmatig aanvullen)_
+- **Haalbaarheidsstudie Maaspoort** — 's-Hertogenbosch (Noord-Brabant) | Fase 1: Verkennen | 0 bedr | Enexis | Actief _(GPS handmatig aanvullen)_
+- **Haalbaarheidsstudie Tichelrijt** — Dongen (Noord-Brabant) | Fase 1: Verkennen | 5 bedr | Enexis | Actief _(GPS handmatig aanvullen)_
+- **Haalbaarheidsstudie Hazeldonk** — Breda (Noord-Brabant) | Fase 1: Verkennen | 5 bedr | Enexis | Actief _(GPS handmatig aanvullen)_
+- **Haalbaarheidsstudie Zanddonk** — Waalwijk (Noord-Brabant) | Fase 1: Verkennen | 5 bedr | Enexis | Actief _(GPS handmatig aanvullen)_
+- **Haalbaarheidsstudie Haansberg** — Rijen (Noord-Brabant) | Fase 1: Verkennen | 5 bedr | Enexis | Actief _(GPS handmatig aanvullen)_
+- **Energiehub Steenakker** — Breda (Noord-Brabant) | Fase 1: Verkennen | 6 bedr | Enexis | On hold _(GPS handmatig aanvullen)_
+- **Waterlaat 2** — Bergeijk (Noord-Brabant) | Fase 3: Realiseren | 2 bedr | Enexis | Actief _(GPS handmatig aanvullen)_
+- **Hapert** — Hapert (Noord-Brabant) | Fase 1: Verkennen | 8 bedr | Enexis | Actief _(GPS handmatig aanvullen)_
+- **Westerhoven** — Westerhoven (Noord-Brabant) | Fase 1: Verkennen | 5 bedr | Enexis | Actief _(GPS handmatig aanvullen)_
+- **Luyksgestel** — Luyksgestel (Noord-Brabant) | Fase 1: Verkennen | 5 bedr | Enexis | Actief _(GPS handmatig aanvullen)_
+- **Schaapsloop** — Valkenswaard (Noord-Brabant) | Fase 2: Plannen & Ontwerpen | 15 bedr | Enexis | Actief _(GPS handmatig aanvullen)_
+- **Energiehub 3BO** — Breda (Noord-Brabant) | Fase 1: Verkennen | 20 bedr | Enexis | Actief _(GPS handmatig aanvullen)_
+- **Energiehub Hazeldonk** — Breda (Noord-Brabant) | Fase 1: Verkennen | 9 bedr | Enexis | Actief _(GPS handmatig aanvullen)_
+- **Energiehub De Mark** — Breda (Noord-Brabant) | Fase 1: Verkennen | 12 bedr | Enexis | Actief _(GPS handmatig aanvullen)_
+- **Grote Oogst Vorstengrafdonk Oss** — Oss (Noord-Brabant) | Fase 1: Verkennen | 5 bedr | Enexis | Actief _(GPS handmatig aanvullen)_
+- **Energiesamenwerking Best - 't Zand** — Best (Noord-Brabant) | Fase 1: Verkennen | 9 bedr | Enexis | Actief _(GPS handmatig aanvullen)_
+- **Energiesamenwerking Best - Breeven** — Best (Noord-Brabant) | Fase 1: Verkennen | 6 bedr | Enexis | Actief _(GPS handmatig aanvullen)_
+- **Energiehub Ekkersrijt West** — Son en Breugel (Noord-Brabant) | Fase 1: Verkennen | 9 bedr | Enexis | Actief _(GPS handmatig aanvullen)_
+- **Energyhub Moleneind** — Oss (Noord-Brabant) | Fase 2: Plannen & Ontwerpen | 6 bedr | Enexis | Actief _(GPS handmatig aanvullen)_
+- **Vorstengrafdonk** — Oss (Noord-Brabant) | Fase 1: Verkennen | 4 bedr | Enexis | Actief _(GPS handmatig aanvullen)_
+- **Verduurzaming Bedrijventerrein Elzenburg-de Geer Oss** — Oss (Noord-Brabant) | Fase 1: Verkennen | 15 bedr | Enexis | Actief _(GPS handmatig aanvullen)_
+- **haalbaarheidsstudie Nobisweg Asten** — Asten (Noord-Brabant) | Fase 1: Verkennen | 16 bedr | Enexis | Gestopt _(GPS handmatig aanvullen)_
+- **Energiehub Weststad** — Oosterhout (Noord-Brabant) | Fase 1: Verkennen | 15 bedr | Enexis | Gestopt _(GPS handmatig aanvullen)_
+- **Energiehub De Run 4000** — Veldhoven (Noord-Brabant) | Fase 1: Verkennen | 0 bedr | Enexis | Gestopt _(GPS handmatig aanvullen)_
+- **Energiehub Kempisch Bedrijvenpark** — Hapert (Noord-Brabant) | Fase 3: Realiseren | 12 bedr | Enexis | Actief _(GPS handmatig aanvullen)_
+- **Texels Eigen Energiegemeenschap (TEE)** — Texel (Noord-Holland) | Fase 1: Verkennen | 0 bedr | Liander | On hold _(GPS handmatig aanvullen)_
+- **Schakelstation Boekelermeer hub** — Alkmaar (Noord-Holland) | Fase 2: Plannen & Ontwerpen | 0 bedr | Liander | Actief _(GPS handmatig aanvullen)_
+- **Energiecoöperatie Amsterdamse Haven (ECAH)** — Amsterdam (Noord-Holland) | Fase 2: Plannen & Ontwerpen | 0 bedr | Liander | Actief _(GPS handmatig aanvullen)_
+- **Energiehub Het Nieuwe Diep** — Den Helder (Noord-Holland) | Fase 1: Verkennen | 0 bedr | Liander | Actief _(GPS handmatig aanvullen)_
+- **Gooimeer Energie/Wattdelen Gooise Meren (bedrijven)** — Naarden (Noord-Holland) | Fase 4: Exploiteren | 6 bedr | Liander | Actief _(GPS handmatig aanvullen)_
+- **Schiphol Trade Park (SADC)** — Hoofddorp (Noord-Holland) | Fase 4: Exploiteren | 15 bedr | Liander | Actief _(GPS handmatig aanvullen)_
+- **ECAH - IJpolder** — Amsterdam (Noord-Holland) | Fase 4: Exploiteren | 4 bedr | Liander | Actief _(GPS handmatig aanvullen)_
+- **Project DOEN-2** — Wormerveer (Noord-Holland) | Fase 2: Plannen & Ontwerpen | 10 bedr | Liander | Actief _(GPS handmatig aanvullen)_
+- **Nijverheidslaan Weesp** — Weesp (Noord-Holland) | Fase 1: Verkennen | 10 bedr | Liander | On hold _(GPS handmatig aanvullen)_
+- **Duurzaam initiatief: EHUB-Eco congestie loket Weesp, slimme energie oplossingen** — Weesp (Noord-Holland) | Fase 3: Realiseren | 20 bedr | Liander | Actief _(GPS handmatig aanvullen)_
+- **Arenapoort / Johan Cruyff Arena** — Amsterdam (Noord-Holland) | Fase 2: Plannen & Ontwerpen | 10 bedr | Liander | Actief _(GPS handmatig aanvullen)_
+- **'t Lochter** — Nijverdal (Overijssel) | Fase 1: Verkennen | 3 bedr | Enexis | Gestopt _(GPS handmatig aanvullen)_
+- **Camping de Kleine Wolf** — Ommen (Overijssel) | Fase 1: Verkennen | 3 bedr | Enexis | Actief _(GPS handmatig aanvullen)_
+- **De Meente, De Enk, Wesepe** — Olst-Wijhe (Overijssel) | Fase 1: Verkennen | 3 bedr | Enexis | Actief _(GPS handmatig aanvullen)_
+- **Technology Base** — Enschede (Overijssel) | Fase 1: Verkennen | 3 bedr | Enexis | Actief _(GPS handmatig aanvullen)_
+- **Greenfield SEH Businesspark XL 2** — Almelo (Overijssel) | Fase 1: Verkennen | 3 bedr | Enexis | Actief _(GPS handmatig aanvullen)_
+- **Smart Energy Hub Nieuwleusen** — Nieuwleusen (Overijssel) | Fase 2: Plannen & Ontwerpen | 3 bedr | Enexis | Actief _(GPS handmatig aanvullen)_
+- **Energieterrein Broeklanden** — Hardenberg (Overijssel) | Fase 4: Exploiteren | 13 bedr | Enexis | Actief _(GPS handmatig aanvullen)_
+- **Havengebied** — Enschede (Overijssel) | Fase 1: Verkennen | 0 bedr | Enexis | Actief _(GPS handmatig aanvullen)_
+- **XL Businesspark** — Almelo (Overijssel) | Fase 2: Plannen & Ontwerpen | 0 bedr | Enexis | Actief _(GPS handmatig aanvullen)_
+- **Dekker Hout** — Vianen (Utrecht) | Fase 4: Exploiteren | 1 bedr | Stedin | Actief _(GPS handmatig aanvullen)_
+- **Nijvercampus Veenendaal** — veenendaal (Utrecht) | Fase 2: Plannen & Ontwerpen | 7 bedr | Stedin | Actief _(GPS handmatig aanvullen)_
+- **Energie Samenwerkingsentiteit Papendorp** — Utrecht (Utrecht) | Fase 2: Plannen & Ontwerpen | 3 bedr | Stedin | Actief _(GPS handmatig aanvullen)_
+- **Hysolar Nieuwegein** — Nieuwegein (Utrecht) | Fase 4: Exploiteren | 3 bedr | Stedin | Actief _(GPS handmatig aanvullen)_
+- **De Corridor Breukelen** — Breukelen (Utrecht) | Fase 1: Verkennen | 0 bedr | Stedin | Gestopt _(GPS handmatig aanvullen)_
+- **Bunschoten-Spakenburg De Zuidwenk** — Bunschoten-Spakenburg (Utrecht) | Fase 2: Plannen & Ontwerpen | 0 bedr | Stedin | Gestopt _(GPS handmatig aanvullen)_
+- **Bunschoten-Spakenburg De Kronkels** — Bunschoten-Spakenburg (Utrecht) | Fase 1: Verkennen | 0 bedr | Stedin | Gestopt _(GPS handmatig aanvullen)_
+- **Leusden Ambachtsweg** — Leusden (Utrecht) | Fase 1: Verkennen | 0 bedr | Stedin | Actief _(GPS handmatig aanvullen)_
+- **Maarssen Bisonspoor** — Maarssen (Utrecht) | Fase 1: Verkennen | 0 bedr | Stedin | On hold _(GPS handmatig aanvullen)_
+
+## 14 fasewijzigingen
+- **Energiehub Hoogveld**: Fase 2: Plannen & Ontwerpen → Fase 1: Verkennen
+- **Energiehub De Sleutel**: Fase 1: Verkennen → Fase 2: Plannen & Ontwerpen
+- **HoogTij**: Fase 1: Verkennen → Fase 2: Plannen & Ontwerpen
+- **Polanenpark**: Fase 2: Plannen & Ontwerpen → Fase 1: Verkennen
+- **Baanstee Noord**: Fase 1: Verkennen → Fase 2: Plannen & Ontwerpen
+- **Amersfoort De Wieken**: Fase 1: Verkennen → Fase 2: Plannen & Ontwerpen
+- **De Mors**: Fase 2: Plannen & Ontwerpen → Fase 1: Verkennen
+- **Broeklanden**: Fase 2: Plannen & Ontwerpen → Fase 3: Realiseren
+- **Energiehub Oude Molen**: Fase 1: Verkennen → Fase 2: Plannen & Ontwerpen
+- **Energiehub LMM**: Fase 1: Verkennen → Fase 2: Plannen & Ontwerpen
+- **Energiehub Eeneind II**: Fase 1: Verkennen → Fase 2: Plannen & Ontwerpen
+- **Ehub Dintelmond**: Fase 1: Verkennen → Fase 3: Realiseren
+- **De President (SADC)**: Fase 3: Realiseren → Fase 4: Exploiteren
+- **Energie Verkenning Borchwerf I**: Fase 1: Verkennen → Fase 2: Plannen & Ontwerpen
+
+## 19 nu gemarkeerd als gestopt
+- Energiehub Uitgeest-Noord
+- De Veken
+- Veld-Oostenrijk
+- Zonmus/Vereniging Duurzame Werf
+- De Grote Hout
+- Polanenpark
+- Amersfoort Calveen
+- Amersfoort De Wieken
+- Renswoude De Hooge Hoek
+- Westermaat de Veldkamp
+- Marssteden
+- Goor De Whee en Spechthorst
+- Eekte-Hazewinkel
+- Energiehub Loven
+- Haalbaarheidsonderzoek energiehub GDC8
+- Haalbaarheidsonderzoek energiehub EAD
+- Haalbaarheidsonderzoek energiehub Park Forum
+- Loswalcluster
+- Zuiderdel
