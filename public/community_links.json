@@ -1,1 +1,1356 @@
-[{"link_id": 1, "hub": "InnoFase Duiven", "provincie": "Gelderland", "community": "Oost-NL Smart Energy Hubs", "status": "Bevestigd", "hub_id": 251, "naam_in_inventarisatie": "Innofase"}, {"link_id": 2, "hub": "Binnenhaven TPN-West Nijmegen", "provincie": "Gelderland", "community": "Oost-NL Smart Energy Hubs", "status": "Bevestigd", "hub_id": 250, "naam_in_inventarisatie": "TPN-West"}, {"link_id": 3, "hub": "De Mars Zutphen", "provincie": "Gelderland", "community": "Oost-NL Smart Energy Hubs", "status": "Bevestigd", "hub_id": 248, "naam_in_inventarisatie": "De Mars"}, {"link_id": 4, "hub": "Harselaar Barneveld", "provincie": "Gelderland", "community": "Oost-NL Smart Energy Hubs", "status": "Bevestigd", "hub_id": 249, "naam_in_inventarisatie": "Harselaar"}, {"link_id": 5, "hub": "Lorentz III Harderwijk / Veldzicht Ermelo", "provincie": "Gelderland", "community": "Oost-NL Smart Energy Hubs", "status": "Bevestigd", "hub_id": 256, "naam_in_inventarisatie": "Lorentz III"}, {"link_id": 6, "hub": "Brick Valley Zevenaar-Lingewaard", "provincie": "Gelderland", "community": "Oost-NL Smart Energy Hubs", "status": "Bevestigd", "hub_id": 254, "naam_in_inventarisatie": "Brick Valley"}, {"link_id": 7, "hub": "Hessenpoort Zwolle-Noord", "provincie": "Overijssel", "community": "Oost-NL Smart Energy Hubs", "status": "Bevestigd", "hub_id": 215, "naam_in_inventarisatie": "Hessenport/ SZN"}, {"link_id": 8, "hub": "Broeklanden Hardenberg", "provincie": "Overijssel", "community": "Oost-NL Smart Energy Hubs", "status": "Bevestigd", "hub_id": 218, "naam_in_inventarisatie": "Broeklanden"}, {"link_id": 9, "hub": "XL Businesspark Almelo", "provincie": "Overijssel", "community": "Oost-NL Smart Energy Hubs", "status": "Bevestigd", "hub_id": 217, "naam_in_inventarisatie": "XL Businesspark in Almelo"}, {"link_id": 10, "hub": "A1 Bedrijvenpark Deventer", "provincie": "Overijssel", "community": "Oost-NL Smart Energy Hubs", "status": "Bevestigd", "hub_id": 439, "naam_in_inventarisatie": "SEH A1 bedrijvenpark"}, {"link_id": 11, "hub": "Kennispark Enschede", "provincie": "Overijssel", "community": "Oost-NL Smart Energy Hubs", "status": "Niet bevestigd", "hub_id": 394, "naam_in_inventarisatie": "Kennispark"}, {"link_id": 12, "hub": "Zeearend Almelo", "provincie": "Overijssel", "community": "Oost-NL Smart Energy Hubs", "status": "Niet bevestigd", "hub_id": 395, "naam_in_inventarisatie": "Zeearend"}, {"link_id": 13, "hub": "Josink Es Enschede", "provincie": "Overijssel", "community": "Oost-NL Smart Energy Hubs", "status": "Niet bevestigd", "hub_id": 396, "naam_in_inventarisatie": "Josink Es"}, {"link_id": 14, "hub": "Turfkade Almelo", "provincie": "Overijssel", "community": "Oost-NL Smart Energy Hubs", "status": "Niet bevestigd", "hub_id": 398, "naam_in_inventarisatie": "Turfkade"}, {"link_id": 15, "hub": "Stepelo Haaksbergen", "provincie": "Overijssel", "community": "Oost-NL Smart Energy Hubs", "status": "Niet bevestigd", "hub_id": 400, "naam_in_inventarisatie": "Stepelo"}, {"link_id": 16, "hub": "Brammelo en 't Varck Haaksbergen", "provincie": "Overijssel", "community": "Oost-NL Smart Energy Hubs", "status": "Niet bevestigd", "hub_id": 401, "naam_in_inventarisatie": "Brammelo en 't Varck"}, {"link_id": 17, "hub": "Katingerveld & Rollepaal Zuid Dedemsvaart", "provincie": "Overijssel", "community": "Oost-NL Smart Energy Hubs", "status": "Niet bevestigd", "hub_id": 402, "naam_in_inventarisatie": "Katingerveld & Rollepaal zuid"}, {"link_id": 18, "hub": "Twentekanaal (HTSP) Hengelo", "provincie": "Overijssel", "community": "Oost-NL Smart Energy Hubs", "status": "Niet bevestigd", "hub_id": 403, "naam_in_inventarisatie": "Twentekanaal (HTSP)"}, {"link_id": 19, "hub": "Haatlandhaven & Esstraat Kampen", "provincie": "Overijssel", "community": "Oost-NL Smart Energy Hubs", "status": "Niet bevestigd", "hub_id": 404, "naam_in_inventarisatie": "Haatlandhaven & Esstraat"}, {"link_id": 20, "hub": "De pol Losser", "provincie": "Overijssel", "community": "Oost-NL Smart Energy Hubs", "status": "Niet bevestigd", "hub_id": 405, "naam_in_inventarisatie": "De pol"}, {"link_id": 21, "hub": "Zoeker Esch Losser", "provincie": "Overijssel", "community": "Oost-NL Smart Energy Hubs", "status": "Niet bevestigd", "hub_id": 406, "naam_in_inventarisatie": "Zoeker Esch"}, {"link_id": 22, "hub": "Eekte-Hazewinkel Oldenzaal", "provincie": "Overijssel", "community": "Oost-NL Smart Energy Hubs", "status": "Niet bevestigd", "hub_id": 407, "naam_in_inventarisatie": "Eekte-Hazewinkel"}, {"link_id": 23, "hub": "Rotbrink Ommen", "provincie": "Overijssel", "community": "Oost-NL Smart Energy Hubs", "status": "Niet bevestigd", "hub_id": 408, "naam_in_inventarisatie": "Rotbrink"}, {"link_id": 24, "hub": "De Zegge Raalte", "provincie": "Overijssel", "community": "Oost-NL Smart Energy Hubs", "status": "Niet bevestigd", "hub_id": 409, "naam_in_inventarisatie": "De Zegge"}, {"link_id": 25, "hub": "De Mors Rijssen", "provincie": "Overijssel", "community": "Oost-NL Smart Energy Hubs", "status": "Niet bevestigd", "hub_id": 410, "naam_in_inventarisatie": "De Mors"}, {"link_id": 26, "hub": "Vletgaarsmaten/ de Haar Holten", "provincie": "Overijssel", "community": "Oost-NL Smart Energy Hubs", "status": "Niet bevestigd", "hub_id": 411, "naam_in_inventarisatie": "Vletgaarsmaten/ de Haar (Holten)"}, {"link_id": 27, "hub": "De Esch Staphorst", "provincie": "Overijssel", "community": "Oost-NL Smart Energy Hubs", "status": "Niet bevestigd", "hub_id": 412, "naam_in_inventarisatie": "De Esch"}, {"link_id": 28, "hub": "Groot Verlaat Steenwijk", "provincie": "Overijssel", "community": "Oost-NL Smart Energy Hubs", "status": "Niet bevestigd", "hub_id": 413, "naam_in_inventarisatie": "Groot Verlaat"}, {"link_id": 29, "hub": "Tubbergen Tubbergen", "provincie": "Overijssel", "community": "Oost-NL Smart Energy Hubs", "status": "Niet bevestigd", "hub_id": 414, "naam_in_inventarisatie": "Tubbergen"}, {"link_id": 30, "hub": "De Sluis, Linderflier Vroomshoop", "provincie": "Overijssel", "community": "Oost-NL Smart Energy Hubs", "status": "Niet bevestigd", "hub_id": 415, "naam_in_inventarisatie": "De Sluis, Linderflier"}, {"link_id": 31, "hub": "SEH ATT Vriezenveen", "provincie": "Overijssel", "community": "Oost-NL Smart Energy Hubs", "status": "Niet bevestigd", "hub_id": 416, "naam_in_inventarisatie": "SEH ATT"}, {"link_id": 32, "hub": "Zevenhont Genemuiden", "provincie": "Overijssel", "community": "Oost-NL Smart Energy Hubs", "status": "Niet bevestigd", "hub_id": 417, "naam_in_inventarisatie": "Zevenhont"}, {"link_id": 33, "hub": "Marslanden Zwolle", "provincie": "Overijssel", "community": "Oost-NL Smart Energy Hubs", "status": "Niet bevestigd", "hub_id": 418, "naam_in_inventarisatie": "Marslanden"}, {"link_id": 34, "hub": "Meppelerdiep/ Zomerdijk Zwartewaterland", "provincie": "Overijssel", "community": "Oost-NL Smart Energy Hubs", "status": "Niet bevestigd", "hub_id": 420, "naam_in_inventarisatie": "Meppelerdiep/ Zomerdijk/ Buitenkwartier"}, {"link_id": 35, "hub": "Hasselt Hasselt", "provincie": "Overijssel", "community": "Oost-NL Smart Energy Hubs", "status": "Niet bevestigd", "hub_id": 421, "naam_in_inventarisatie": "Hasselt"}, {"link_id": 36, "hub": "Westhaven / ECAH Amsterdam", "provincie": "Noord-Holland", "community": "EIGEN / MOOI-SIGOHE", "status": "Bevestigd", "hub_id": 229, "naam_in_inventarisatie": "ECAH"}, {"link_id": 37, "hub": "City Logistics Innovation Campus Amsterdam", "provincie": "Noord-Holland", "community": "EIGEN / MOOI-SIGOHE", "status": "Bevestigd", "hub_id": null, "naam_in_inventarisatie": null}, {"link_id": 38, "hub": "Bedrijvenpark De Zwette Leeuwarden", "provincie": "Friesland", "community": "EIGEN / MOOI-SIGOHE", "status": "Bevestigd", "hub_id": 212, "naam_in_inventarisatie": "De Zwette"}, {"link_id": 39, "hub": "Camping De Blauwe Haan Uffelte", "provincie": "Drenthe", "community": "Drents Net op Groen", "status": "Bevestigd", "hub_id": null, "naam_in_inventarisatie": null}, {"link_id": 40, "hub": "Drenthe Growers Erica", "provincie": "Drenthe", "community": "Drents Net op Groen", "status": "Bevestigd", "hub_id": null, "naam_in_inventarisatie": null}, {"link_id": 41, "hub": "ORTESE Emmen", "provincie": "Drenthe", "community": "Drents Net op Groen", "status": "Bevestigd", "hub_id": null, "naam_in_inventarisatie": null}, {"link_id": 42, "hub": "Energiehub Riegmeer Hoogeveen", "provincie": "Drenthe", "community": "Drents Net op Groen", "status": "Bevestigd", "hub_id": 365, "naam_in_inventarisatie": "Energiehub Riegmeer"}, {"link_id": 43, "hub": "MCEH Werklandschap Assen-Zuid Assen", "provincie": "Drenthe", "community": "Drents Net op Groen", "status": "Bevestigd", "hub_id": 366, "naam_in_inventarisatie": "MCEH Werklandschap Assen-Zuid"}, {"link_id": 44, "hub": "Alton", "provincie": "Noord-Holland", "community": "Stimuleringsprogramma NH", "status": "Bevestigd", "hub_id": 221, "naam_in_inventarisatie": "Alton"}, {"link_id": 45, "hub": "Baanstee Noord", "provincie": "Noord-Holland", "community": "Stimuleringsprogramma NH", "status": "Bevestigd", "hub_id": 223, "naam_in_inventarisatie": "Baanstee Noord"}, {"link_id": 46, "hub": "De Grote Hout", "provincie": "Noord-Holland", "community": "Stimuleringsprogramma NH", "status": "Bevestigd", "hub_id": 227, "naam_in_inventarisatie": "De Grote Hout"}, {"link_id": 47, "hub": "De Veken", "provincie": "Noord-Holland", "community": "Stimuleringsprogramma NH", "status": "Bevestigd", "hub_id": 228, "naam_in_inventarisatie": "De Veken"}, {"link_id": 48, "hub": "Het Grootslag", "provincie": "Noord-Holland", "community": "Stimuleringsprogramma NH", "status": "Bevestigd", "hub_id": 234, "naam_in_inventarisatie": "Het Grootslag"}, {"link_id": 49, "hub": "HoogTij", "provincie": "Noord-Holland", "community": "Stimuleringsprogramma NH", "status": "Bevestigd", "hub_id": 235, "naam_in_inventarisatie": "HoogTij"}, {"link_id": 50, "hub": "Kooypunt", "provincie": "Noord-Holland", "community": "Stimuleringsprogramma NH", "status": "Bevestigd", "hub_id": 237, "naam_in_inventarisatie": "Kooypunt"}, {"link_id": 51, "hub": "Loswalcluster", "provincie": "Noord-Holland", "community": "Stimuleringsprogramma NH", "status": "Bevestigd", "hub_id": 238, "naam_in_inventarisatie": "Loswalcluster"}, {"link_id": 52, "hub": "Smart Grid Haven Den Helder", "provincie": "Noord-Holland", "community": "Stimuleringsprogramma NH", "status": "Bevestigd", "hub_id": 242, "naam_in_inventarisatie": "Smart Grid Haven Den Helder"}, {"link_id": 53, "hub": "Gooimeer", "provincie": "Noord-Holland", "community": "Stimuleringsprogramma NH", "status": "Bevestigd", "hub_id": 232, "naam_in_inventarisatie": "Gooimeer"}, {"link_id": 54, "hub": "Hoorn80", "provincie": "Noord-Holland", "community": "Stimuleringsprogramma NH", "status": "Bevestigd", "hub_id": 236, "naam_in_inventarisatie": "Hoorn80"}, {"link_id": 55, "hub": "Zuiderdel", "provincie": "Noord-Holland", "community": "Stimuleringsprogramma NH", "status": "Bevestigd", "hub_id": 247, "naam_in_inventarisatie": "Zuiderdel"}, {"link_id": 56, "hub": "Beverkoog", "provincie": "Noord-Holland", "community": "Stimuleringsprogramma NH", "status": "Bevestigd", "hub_id": 225, "naam_in_inventarisatie": "Beverkoog"}, {"link_id": 57, "hub": "ArenApoort", "provincie": "Noord-Holland", "community": "Stimuleringsprogramma NH", "status": "Bevestigd", "hub_id": 222, "naam_in_inventarisatie": "ArenApoort"}, {"link_id": 58, "hub": "Beverwijk Business Docks", "provincie": "Noord-Holland", "community": "Stimuleringsprogramma NH", "status": "Bevestigd", "hub_id": 389, "naam_in_inventarisatie": "Bedrijventerrein Business Docks - Cluster 4"}, {"link_id": 59, "hub": "Havengebied IJmuiden", "provincie": "Noord-Holland", "community": "Stimuleringsprogramma NH", "status": "Bevestigd", "hub_id": 233, "naam_in_inventarisatie": "Havengebied Ijmuiden"}, {"link_id": 60, "hub": "Nieuw-Vennep Zuid", "provincie": "Noord-Holland", "community": "Stimuleringsprogramma NH", "status": "Bevestigd", "hub_id": 239, "naam_in_inventarisatie": "Nieuw-Vennep Zuid"}, {"link_id": 61, "hub": "Polanenpark", "provincie": "Noord-Holland", "community": "Stimuleringsprogramma NH", "status": "Bevestigd", "hub_id": 240, "naam_in_inventarisatie": "Polanenpark"}, {"link_id": 62, "hub": "Project Doen-2 / Noorderveld Wormerveer", "provincie": "Noord-Holland", "community": "Stimuleringsprogramma NH", "status": "Bevestigd", "hub_id": 241, "naam_in_inventarisatie": "Project Doen-2 / Noorderveld Wormerveer"}, {"link_id": 63, "hub": "Westfrisia", "provincie": "Noord-Holland", "community": "Stimuleringsprogramma NH", "status": "Bevestigd", "hub_id": 246, "naam_in_inventarisatie": "Westfrisia"}, {"link_id": 64, "hub": "Waarderpolder", "provincie": "Noord-Holland", "community": "Stimuleringsprogramma NH", "status": "Bevestigd", "hub_id": 243, "naam_in_inventarisatie": "Waarderpolder"}, {"link_id": 65, "hub": "De President (SADC) Hoofddorp", "provincie": "Noord-Holland", "community": "Stimuleringsprogramma NH", "status": "Niet bevestigd", "hub_id": 387, "naam_in_inventarisatie": "De President (SADC)"}, {"link_id": 66, "hub": "Sloterdijk Westpoort Amsterdam", "provincie": "Noord-Holland", "community": "Stimuleringsprogramma NH", "status": "Niet bevestigd", "hub_id": 388, "naam_in_inventarisatie": "Sloterdijk Westpoort"}, {"link_id": 67, "hub": "EHUB-Eco congestie loket Weesp Weesp", "provincie": "Noord-Holland", "community": "Stimuleringsprogramma NH", "status": "Niet bevestigd", "hub_id": 390, "naam_in_inventarisatie": "EHUB-Eco congestie loket Weesp"}, {"link_id": 68, "hub": "EHUB IVW-Weesp Duurzaam Initiatief Weesp", "provincie": "Noord-Holland", "community": "Stimuleringsprogramma NH", "status": "Niet bevestigd", "hub_id": 391, "naam_in_inventarisatie": "EHUB IVW-Weesp Duurzaam Initiatief"}, {"link_id": 69, "hub": "Boekelermeer Energy Valley Alkmaar", "provincie": "Noord-Holland", "community": "Stimuleringsprogramma NH", "status": "Bevestigd", "hub_id": 429, "naam_in_inventarisatie": "Boekelermeer Energy Valley"}, {"link_id": 70, "hub": "KBP Hapert", "provincie": "Noord-Brabant", "community": "EWB Brabant CoP", "status": "Niet bevestigd", "hub_id": null, "naam_in_inventarisatie": null}, {"link_id": 71, "hub": "Theodorushaven/ Noordland/DePoort Bergen op Zoom", "provincie": "Noord-Brabant", "community": "EWB Brabant CoP", "status": "Niet bevestigd", "hub_id": 369, "naam_in_inventarisatie": "Theodorushaven/ Noordland/DePoort"}, {"link_id": 72, "hub": "Energiehub Oude Molen Halsteren", "provincie": "Noord-Brabant", "community": "EWB Brabant CoP", "status": "Niet bevestigd", "hub_id": 370, "naam_in_inventarisatie": "Energiehub Oude Molen"}, {"link_id": 73, "hub": "Energiehub LMM Bergen op Zoom", "provincie": "Noord-Brabant", "community": "EWB Brabant CoP", "status": "Niet bevestigd", "hub_id": 371, "naam_in_inventarisatie": "Energiehub LMM"}, {"link_id": 74, "hub": "Ehub Dintelmond Heijningen", "provincie": "Noord-Brabant", "community": "EWB Brabant CoP", "status": "Niet bevestigd", "hub_id": 372, "naam_in_inventarisatie": "Ehub Dintelmond"}, {"link_id": 75, "hub": "Energyhub Vlasweg - Port of Moerdijk Moerdijk", "provincie": "Noord-Brabant", "community": "EWB Brabant CoP", "status": "Niet bevestigd", "hub_id": 373, "naam_in_inventarisatie": "Energyhub Vlasweg - Port of Moerdijk"}, {"link_id": 76, "hub": "Energiehub Everdenberg-Oost Oosterhout", "provincie": "Noord-Brabant", "community": "EWB Brabant CoP", "status": "Niet bevestigd", "hub_id": 374, "naam_in_inventarisatie": "Energiehub Everdenberg-Oost"}, {"link_id": 77, "hub": "Energiehub De Hurk Eindhoven", "provincie": "Noord-Brabant", "community": "EWB Brabant CoP", "status": "Niet bevestigd", "hub_id": 375, "naam_in_inventarisatie": "Energiehub De Hurk"}, {"link_id": 78, "hub": "Energiehub Tilburg Zuid Tilburg", "provincie": "Noord-Brabant", "community": "EWB Brabant CoP", "status": "Niet bevestigd", "hub_id": 376, "naam_in_inventarisatie": "Energiehub Tilburg Zuid"}, {"link_id": 79, "hub": "Energiehub Kraaiven - Vossenberg Tilburg", "provincie": "Noord-Brabant", "community": "EWB Brabant CoP", "status": "Niet bevestigd", "hub_id": 377, "naam_in_inventarisatie": "Energiehub Kraaiven - Vossenberg"}, {"link_id": 80, "hub": "Energiehub Loven Tilburg", "provincie": "Noord-Brabant", "community": "EWB Brabant CoP", "status": "Niet bevestigd", "hub_id": 378, "naam_in_inventarisatie": "Energiehub Loven"}, {"link_id": 81, "hub": "Grote Oogst Moleneind Oss", "provincie": "Noord-Brabant", "community": "EWB Brabant CoP", "status": "Niet bevestigd", "hub_id": 379, "naam_in_inventarisatie": "Grote Oogst Moleneind"}, {"link_id": 82, "hub": "Energyhub bedrijventerrein Uden Uden", "provincie": "Noord-Brabant", "community": "EWB Brabant CoP", "status": "Niet bevestigd", "hub_id": 380, "naam_in_inventarisatie": "Energyhub bedrijventerrein Uden"}, {"link_id": 83, "hub": "Energie Hub Duin Schijndel Schijndel", "provincie": "Noord-Brabant", "community": "EWB Brabant CoP", "status": "Niet bevestigd", "hub_id": 381, "naam_in_inventarisatie": "Energie Hub Duin Schijndel"}, {"link_id": 84, "hub": "Haalbaarheidsstudie Energiehub Elzenburg-de Geer Oss", "provincie": "Noord-Brabant", "community": "EWB Brabant CoP", "status": "Niet bevestigd", "hub_id": 382, "naam_in_inventarisatie": "Haalbaarheidsstudie Energiehub Elzenburg-de Geer"}, {"link_id": 85, "hub": "Haalbaarheidsstudie Energiehub Asten Asten", "provincie": "Noord-Brabant", "community": "EWB Brabant CoP", "status": "Niet bevestigd", "hub_id": 383, "naam_in_inventarisatie": "Haalbaarheidsstudie energie hub Asten"}, {"link_id": 86, "hub": "Lokaal Collectief Energiesysteem / LCE Veghel", "provincie": "Noord-Brabant", "community": "EWB Brabant CoP", "status": "Niet bevestigd", "hub_id": 384, "naam_in_inventarisatie": "Lokaal Collectief Energiesysteem / LCE"}, {"link_id": 87, "hub": "e-Hub Majoppeveld Roosendaal", "provincie": "Noord-Brabant", "community": "EWB Brabant CoP", "status": "Niet bevestigd", "hub_id": 385, "naam_in_inventarisatie": "e-Hub Majoppeveld"}, {"link_id": 88, "hub": "Energie Verkenning Borchwerf I Roosendaal", "provincie": "Noord-Brabant", "community": "EWB Brabant CoP", "status": "Niet bevestigd", "hub_id": 386, "naam_in_inventarisatie": "Energie Verkenning Borchwerf I"}, {"link_id": 89, "hub": "Energiehub Habraken Veldhoven", "provincie": "Noord-Brabant", "community": "EWB Brabant CoP", "status": "Niet bevestigd", "hub_id": 430, "naam_in_inventarisatie": "Energiehub Habraken"}, {"link_id": 90, "hub": "Smart Energy Hubs Deventer", "provincie": "Overijssel", "community": "TSE LC Systeemintegratie", "status": "Bevestigd", "hub_id": null, "naam_in_inventarisatie": null}, {"link_id": 91, "hub": "Eeserwold Energy Hub", "provincie": "Overijssel", "community": "TSE LC Systeemintegratie", "status": "Bevestigd", "hub_id": null, "naam_in_inventarisatie": null}, {"link_id": 92, "hub": "Ecofactorij", "provincie": "Gelderland", "community": "TSE LC Systeemintegratie", "status": "Bevestigd", "hub_id": 255, "naam_in_inventarisatie": "Ecofactory"}, {"link_id": 93, "hub": "Slim Multi-User Energiesysteem", "provincie": "Gelderland", "community": "TSE LC Systeemintegratie", "status": "Bevestigd", "hub_id": null, "naam_in_inventarisatie": null}]
+[
+ {
+  "link_id": 1,
+  "hub": "InnoFase Duiven",
+  "provincie": "Gelderland",
+  "community": "Oost-NL Smart Energy Hubs",
+  "status": "Bevestigd",
+  "hub_id": 251,
+  "naam_in_inventarisatie": "Innofase"
+ },
+ {
+  "link_id": 2,
+  "hub": "Binnenhaven TPN-West Nijmegen",
+  "provincie": "Gelderland",
+  "community": "Oost-NL Smart Energy Hubs",
+  "status": "Bevestigd",
+  "hub_id": 250,
+  "naam_in_inventarisatie": "TPN-West"
+ },
+ {
+  "link_id": 3,
+  "hub": "De Mars Zutphen",
+  "provincie": "Gelderland",
+  "community": "Oost-NL Smart Energy Hubs",
+  "status": "Bevestigd",
+  "hub_id": 248,
+  "naam_in_inventarisatie": "De Mars"
+ },
+ {
+  "link_id": 4,
+  "hub": "Harselaar Barneveld",
+  "provincie": "Gelderland",
+  "community": "Oost-NL Smart Energy Hubs",
+  "status": "Bevestigd",
+  "hub_id": 249,
+  "naam_in_inventarisatie": "Harselaar"
+ },
+ {
+  "link_id": 5,
+  "hub": "Lorentz III Harderwijk / Veldzicht Ermelo",
+  "provincie": "Gelderland",
+  "community": "Oost-NL Smart Energy Hubs",
+  "status": "Bevestigd",
+  "hub_id": 256,
+  "naam_in_inventarisatie": "Lorentz III"
+ },
+ {
+  "link_id": 6,
+  "hub": "Brick Valley Zevenaar-Lingewaard",
+  "provincie": "Gelderland",
+  "community": "Oost-NL Smart Energy Hubs",
+  "status": "Bevestigd",
+  "hub_id": 254,
+  "naam_in_inventarisatie": "Brick Valley"
+ },
+ {
+  "link_id": 7,
+  "hub": "Hessenpoort Zwolle-Noord",
+  "provincie": "Overijssel",
+  "community": "Oost-NL Smart Energy Hubs",
+  "status": "Bevestigd",
+  "hub_id": 215,
+  "naam_in_inventarisatie": "Hessenport/ SZN"
+ },
+ {
+  "link_id": 8,
+  "hub": "Broeklanden Hardenberg",
+  "provincie": "Overijssel",
+  "community": "Oost-NL Smart Energy Hubs",
+  "status": "Bevestigd",
+  "hub_id": 218,
+  "naam_in_inventarisatie": "Broeklanden"
+ },
+ {
+  "link_id": 9,
+  "hub": "XL Businesspark Almelo",
+  "provincie": "Overijssel",
+  "community": "Oost-NL Smart Energy Hubs",
+  "status": "Bevestigd",
+  "hub_id": 217,
+  "naam_in_inventarisatie": "XL Businesspark in Almelo"
+ },
+ {
+  "link_id": 10,
+  "hub": "A1 Bedrijvenpark Deventer",
+  "provincie": "Overijssel",
+  "community": "Oost-NL Smart Energy Hubs",
+  "status": "Bevestigd",
+  "hub_id": 439,
+  "naam_in_inventarisatie": "SEH A1 bedrijvenpark"
+ },
+ {
+  "link_id": 11,
+  "hub": "Kennispark Enschede",
+  "provincie": "Overijssel",
+  "community": "Oost-NL Smart Energy Hubs",
+  "status": "Niet bevestigd",
+  "hub_id": 394,
+  "naam_in_inventarisatie": "Kennispark"
+ },
+ {
+  "link_id": 12,
+  "hub": "Zeearend Almelo",
+  "provincie": "Overijssel",
+  "community": "Oost-NL Smart Energy Hubs",
+  "status": "Niet bevestigd",
+  "hub_id": 395,
+  "naam_in_inventarisatie": "Zeearend"
+ },
+ {
+  "link_id": 13,
+  "hub": "Josink Es Enschede",
+  "provincie": "Overijssel",
+  "community": "Oost-NL Smart Energy Hubs",
+  "status": "Niet bevestigd",
+  "hub_id": 396,
+  "naam_in_inventarisatie": "Josink Es"
+ },
+ {
+  "link_id": 14,
+  "hub": "Turfkade Almelo",
+  "provincie": "Overijssel",
+  "community": "Oost-NL Smart Energy Hubs",
+  "status": "Niet bevestigd",
+  "hub_id": 398,
+  "naam_in_inventarisatie": "Turfkade"
+ },
+ {
+  "link_id": 15,
+  "hub": "Stepelo Haaksbergen",
+  "provincie": "Overijssel",
+  "community": "Oost-NL Smart Energy Hubs",
+  "status": "Niet bevestigd",
+  "hub_id": 400,
+  "naam_in_inventarisatie": "Stepelo"
+ },
+ {
+  "link_id": 16,
+  "hub": "Brammelo en 't Varck Haaksbergen",
+  "provincie": "Overijssel",
+  "community": "Oost-NL Smart Energy Hubs",
+  "status": "Niet bevestigd",
+  "hub_id": 401,
+  "naam_in_inventarisatie": "Brammelo en 't Varck"
+ },
+ {
+  "link_id": 17,
+  "hub": "Katingerveld & Rollepaal Zuid Dedemsvaart",
+  "provincie": "Overijssel",
+  "community": "Oost-NL Smart Energy Hubs",
+  "status": "Niet bevestigd",
+  "hub_id": 402,
+  "naam_in_inventarisatie": "Katingerveld & Rollepaal zuid"
+ },
+ {
+  "link_id": 18,
+  "hub": "Twentekanaal (HTSP) Hengelo",
+  "provincie": "Overijssel",
+  "community": "Oost-NL Smart Energy Hubs",
+  "status": "Niet bevestigd",
+  "hub_id": 403,
+  "naam_in_inventarisatie": "Twentekanaal (HTSP)"
+ },
+ {
+  "link_id": 19,
+  "hub": "Haatlandhaven & Esstraat Kampen",
+  "provincie": "Overijssel",
+  "community": "Oost-NL Smart Energy Hubs",
+  "status": "Niet bevestigd",
+  "hub_id": 404,
+  "naam_in_inventarisatie": "Haatlandhaven & Esstraat"
+ },
+ {
+  "link_id": 20,
+  "hub": "De pol Losser",
+  "provincie": "Overijssel",
+  "community": "Oost-NL Smart Energy Hubs",
+  "status": "Niet bevestigd",
+  "hub_id": 405,
+  "naam_in_inventarisatie": "De pol"
+ },
+ {
+  "link_id": 21,
+  "hub": "Zoeker Esch Losser",
+  "provincie": "Overijssel",
+  "community": "Oost-NL Smart Energy Hubs",
+  "status": "Niet bevestigd",
+  "hub_id": 406,
+  "naam_in_inventarisatie": "Zoeker Esch"
+ },
+ {
+  "link_id": 22,
+  "hub": "Eekte-Hazewinkel Oldenzaal",
+  "provincie": "Overijssel",
+  "community": "Oost-NL Smart Energy Hubs",
+  "status": "Niet bevestigd",
+  "hub_id": 407,
+  "naam_in_inventarisatie": "Eekte-Hazewinkel"
+ },
+ {
+  "link_id": 23,
+  "hub": "Rotbrink Ommen",
+  "provincie": "Overijssel",
+  "community": "Oost-NL Smart Energy Hubs",
+  "status": "Niet bevestigd",
+  "hub_id": 408,
+  "naam_in_inventarisatie": "Rotbrink"
+ },
+ {
+  "link_id": 24,
+  "hub": "De Zegge Raalte",
+  "provincie": "Overijssel",
+  "community": "Oost-NL Smart Energy Hubs",
+  "status": "Niet bevestigd",
+  "hub_id": 409,
+  "naam_in_inventarisatie": "De Zegge"
+ },
+ {
+  "link_id": 25,
+  "hub": "De Mors Rijssen",
+  "provincie": "Overijssel",
+  "community": "Oost-NL Smart Energy Hubs",
+  "status": "Niet bevestigd",
+  "hub_id": 410,
+  "naam_in_inventarisatie": "De Mors"
+ },
+ {
+  "link_id": 26,
+  "hub": "Vletgaarsmaten/ de Haar Holten",
+  "provincie": "Overijssel",
+  "community": "Oost-NL Smart Energy Hubs",
+  "status": "Niet bevestigd",
+  "hub_id": 411,
+  "naam_in_inventarisatie": "Vletgaarsmaten/ de Haar (Holten)"
+ },
+ {
+  "link_id": 27,
+  "hub": "De Esch Staphorst",
+  "provincie": "Overijssel",
+  "community": "Oost-NL Smart Energy Hubs",
+  "status": "Niet bevestigd",
+  "hub_id": 412,
+  "naam_in_inventarisatie": "De Esch"
+ },
+ {
+  "link_id": 28,
+  "hub": "Groot Verlaat Steenwijk",
+  "provincie": "Overijssel",
+  "community": "Oost-NL Smart Energy Hubs",
+  "status": "Niet bevestigd",
+  "hub_id": 413,
+  "naam_in_inventarisatie": "Groot Verlaat"
+ },
+ {
+  "link_id": 29,
+  "hub": "Tubbergen Tubbergen",
+  "provincie": "Overijssel",
+  "community": "Oost-NL Smart Energy Hubs",
+  "status": "Niet bevestigd",
+  "hub_id": 414,
+  "naam_in_inventarisatie": "Tubbergen"
+ },
+ {
+  "link_id": 30,
+  "hub": "De Sluis, Linderflier Vroomshoop",
+  "provincie": "Overijssel",
+  "community": "Oost-NL Smart Energy Hubs",
+  "status": "Niet bevestigd",
+  "hub_id": 415,
+  "naam_in_inventarisatie": "De Sluis, Linderflier"
+ },
+ {
+  "link_id": 31,
+  "hub": "SEH ATT Vriezenveen",
+  "provincie": "Overijssel",
+  "community": "Oost-NL Smart Energy Hubs",
+  "status": "Niet bevestigd",
+  "hub_id": 416,
+  "naam_in_inventarisatie": "SEH ATT"
+ },
+ {
+  "link_id": 32,
+  "hub": "Zevenhont Genemuiden",
+  "provincie": "Overijssel",
+  "community": "Oost-NL Smart Energy Hubs",
+  "status": "Niet bevestigd",
+  "hub_id": 417,
+  "naam_in_inventarisatie": "Zevenhont"
+ },
+ {
+  "link_id": 33,
+  "hub": "Marslanden Zwolle",
+  "provincie": "Overijssel",
+  "community": "Oost-NL Smart Energy Hubs",
+  "status": "Niet bevestigd",
+  "hub_id": 418,
+  "naam_in_inventarisatie": "Marslanden"
+ },
+ {
+  "link_id": 34,
+  "hub": "Meppelerdiep/ Zomerdijk Zwartewaterland",
+  "provincie": "Overijssel",
+  "community": "Oost-NL Smart Energy Hubs",
+  "status": "Niet bevestigd",
+  "hub_id": 420,
+  "naam_in_inventarisatie": "Meppelerdiep/ Zomerdijk/ Buitenkwartier"
+ },
+ {
+  "link_id": 35,
+  "hub": "Hasselt Hasselt",
+  "provincie": "Overijssel",
+  "community": "Oost-NL Smart Energy Hubs",
+  "status": "Niet bevestigd",
+  "hub_id": 421,
+  "naam_in_inventarisatie": "Hasselt"
+ },
+ {
+  "link_id": 36,
+  "hub": "Westhaven / ECAH Amsterdam",
+  "provincie": "Noord-Holland",
+  "community": "EIGEN / MOOI-SIGOHE",
+  "status": "Bevestigd",
+  "hub_id": 229,
+  "naam_in_inventarisatie": "ECAH"
+ },
+ {
+  "link_id": 37,
+  "hub": "City Logistics Innovation Campus Amsterdam",
+  "provincie": "Noord-Holland",
+  "community": "EIGEN / MOOI-SIGOHE",
+  "status": "Bevestigd",
+  "hub_id": null,
+  "naam_in_inventarisatie": null
+ },
+ {
+  "link_id": 38,
+  "hub": "Bedrijvenpark De Zwette Leeuwarden",
+  "provincie": "Friesland",
+  "community": "EIGEN / MOOI-SIGOHE",
+  "status": "Bevestigd",
+  "hub_id": 212,
+  "naam_in_inventarisatie": "De Zwette"
+ },
+ {
+  "link_id": 39,
+  "hub": "Camping De Blauwe Haan Uffelte",
+  "provincie": "Drenthe",
+  "community": "Drents Net op Groen",
+  "status": "Bevestigd",
+  "hub_id": null,
+  "naam_in_inventarisatie": null
+ },
+ {
+  "link_id": 40,
+  "hub": "Drenthe Growers Erica",
+  "provincie": "Drenthe",
+  "community": "Drents Net op Groen",
+  "status": "Bevestigd",
+  "hub_id": null,
+  "naam_in_inventarisatie": null
+ },
+ {
+  "link_id": 41,
+  "hub": "ORTESE Emmen",
+  "provincie": "Drenthe",
+  "community": "Drents Net op Groen",
+  "status": "Bevestigd",
+  "hub_id": null,
+  "naam_in_inventarisatie": null
+ },
+ {
+  "link_id": 42,
+  "hub": "Energiehub Riegmeer Hoogeveen",
+  "provincie": "Drenthe",
+  "community": "Drents Net op Groen",
+  "status": "Bevestigd",
+  "hub_id": 365,
+  "naam_in_inventarisatie": "Energiehub Riegmeer"
+ },
+ {
+  "link_id": 43,
+  "hub": "MCEH Werklandschap Assen-Zuid Assen",
+  "provincie": "Drenthe",
+  "community": "Drents Net op Groen",
+  "status": "Bevestigd",
+  "hub_id": 366,
+  "naam_in_inventarisatie": "MCEH Werklandschap Assen-Zuid"
+ },
+ {
+  "link_id": 44,
+  "hub": "Alton",
+  "provincie": "Noord-Holland",
+  "community": "Stimuleringsprogramma NH",
+  "status": "Bevestigd",
+  "hub_id": 221,
+  "naam_in_inventarisatie": "Alton"
+ },
+ {
+  "link_id": 45,
+  "hub": "Baanstee Noord",
+  "provincie": "Noord-Holland",
+  "community": "Stimuleringsprogramma NH",
+  "status": "Bevestigd",
+  "hub_id": 223,
+  "naam_in_inventarisatie": "Baanstee Noord"
+ },
+ {
+  "link_id": 46,
+  "hub": "De Grote Hout",
+  "provincie": "Noord-Holland",
+  "community": "Stimuleringsprogramma NH",
+  "status": "Bevestigd",
+  "hub_id": 227,
+  "naam_in_inventarisatie": "De Grote Hout"
+ },
+ {
+  "link_id": 47,
+  "hub": "De Veken",
+  "provincie": "Noord-Holland",
+  "community": "Stimuleringsprogramma NH",
+  "status": "Bevestigd",
+  "hub_id": 228,
+  "naam_in_inventarisatie": "De Veken"
+ },
+ {
+  "link_id": 48,
+  "hub": "Het Grootslag",
+  "provincie": "Noord-Holland",
+  "community": "Stimuleringsprogramma NH",
+  "status": "Bevestigd",
+  "hub_id": 234,
+  "naam_in_inventarisatie": "Het Grootslag"
+ },
+ {
+  "link_id": 49,
+  "hub": "HoogTij",
+  "provincie": "Noord-Holland",
+  "community": "Stimuleringsprogramma NH",
+  "status": "Bevestigd",
+  "hub_id": 235,
+  "naam_in_inventarisatie": "HoogTij"
+ },
+ {
+  "link_id": 50,
+  "hub": "Kooypunt",
+  "provincie": "Noord-Holland",
+  "community": "Stimuleringsprogramma NH",
+  "status": "Bevestigd",
+  "hub_id": 237,
+  "naam_in_inventarisatie": "Kooypunt"
+ },
+ {
+  "link_id": 51,
+  "hub": "Loswalcluster",
+  "provincie": "Noord-Holland",
+  "community": "Stimuleringsprogramma NH",
+  "status": "Bevestigd",
+  "hub_id": 238,
+  "naam_in_inventarisatie": "Loswalcluster"
+ },
+ {
+  "link_id": 52,
+  "hub": "Smart Grid Haven Den Helder",
+  "provincie": "Noord-Holland",
+  "community": "Stimuleringsprogramma NH",
+  "status": "Bevestigd",
+  "hub_id": 242,
+  "naam_in_inventarisatie": "Smart Grid Haven Den Helder"
+ },
+ {
+  "link_id": 53,
+  "hub": "Gooimeer",
+  "provincie": "Noord-Holland",
+  "community": "Stimuleringsprogramma NH",
+  "status": "Bevestigd",
+  "hub_id": 232,
+  "naam_in_inventarisatie": "Gooimeer"
+ },
+ {
+  "link_id": 54,
+  "hub": "Hoorn80",
+  "provincie": "Noord-Holland",
+  "community": "Stimuleringsprogramma NH",
+  "status": "Bevestigd",
+  "hub_id": 236,
+  "naam_in_inventarisatie": "Hoorn80"
+ },
+ {
+  "link_id": 55,
+  "hub": "Zuiderdel",
+  "provincie": "Noord-Holland",
+  "community": "Stimuleringsprogramma NH",
+  "status": "Bevestigd",
+  "hub_id": 247,
+  "naam_in_inventarisatie": "Zuiderdel"
+ },
+ {
+  "link_id": 56,
+  "hub": "Beverkoog",
+  "provincie": "Noord-Holland",
+  "community": "Stimuleringsprogramma NH",
+  "status": "Bevestigd",
+  "hub_id": 225,
+  "naam_in_inventarisatie": "Beverkoog"
+ },
+ {
+  "link_id": 57,
+  "hub": "ArenApoort",
+  "provincie": "Noord-Holland",
+  "community": "Stimuleringsprogramma NH",
+  "status": "Bevestigd",
+  "hub_id": 222,
+  "naam_in_inventarisatie": "ArenApoort"
+ },
+ {
+  "link_id": 58,
+  "hub": "Beverwijk Business Docks",
+  "provincie": "Noord-Holland",
+  "community": "Stimuleringsprogramma NH",
+  "status": "Bevestigd",
+  "hub_id": 389,
+  "naam_in_inventarisatie": "Bedrijventerrein Business Docks - Cluster 4"
+ },
+ {
+  "link_id": 59,
+  "hub": "Havengebied IJmuiden",
+  "provincie": "Noord-Holland",
+  "community": "Stimuleringsprogramma NH",
+  "status": "Bevestigd",
+  "hub_id": 233,
+  "naam_in_inventarisatie": "Havengebied Ijmuiden"
+ },
+ {
+  "link_id": 60,
+  "hub": "Nieuw-Vennep Zuid",
+  "provincie": "Noord-Holland",
+  "community": "Stimuleringsprogramma NH",
+  "status": "Bevestigd",
+  "hub_id": 239,
+  "naam_in_inventarisatie": "Nieuw-Vennep Zuid"
+ },
+ {
+  "link_id": 61,
+  "hub": "Polanenpark",
+  "provincie": "Noord-Holland",
+  "community": "Stimuleringsprogramma NH",
+  "status": "Bevestigd",
+  "hub_id": 240,
+  "naam_in_inventarisatie": "Polanenpark"
+ },
+ {
+  "link_id": 62,
+  "hub": "Project Doen-2 / Noorderveld Wormerveer",
+  "provincie": "Noord-Holland",
+  "community": "Stimuleringsprogramma NH",
+  "status": "Bevestigd",
+  "hub_id": 241,
+  "naam_in_inventarisatie": "Project Doen-2 / Noorderveld Wormerveer"
+ },
+ {
+  "link_id": 63,
+  "hub": "Westfrisia",
+  "provincie": "Noord-Holland",
+  "community": "Stimuleringsprogramma NH",
+  "status": "Bevestigd",
+  "hub_id": 246,
+  "naam_in_inventarisatie": "Westfrisia"
+ },
+ {
+  "link_id": 64,
+  "hub": "Waarderpolder",
+  "provincie": "Noord-Holland",
+  "community": "Stimuleringsprogramma NH",
+  "status": "Bevestigd",
+  "hub_id": 243,
+  "naam_in_inventarisatie": "Waarderpolder"
+ },
+ {
+  "link_id": 65,
+  "hub": "De President (SADC) Hoofddorp",
+  "provincie": "Noord-Holland",
+  "community": "Stimuleringsprogramma NH",
+  "status": "Niet bevestigd",
+  "hub_id": 387,
+  "naam_in_inventarisatie": "De President (SADC)"
+ },
+ {
+  "link_id": 66,
+  "hub": "Sloterdijk Westpoort Amsterdam",
+  "provincie": "Noord-Holland",
+  "community": "Stimuleringsprogramma NH",
+  "status": "Niet bevestigd",
+  "hub_id": 388,
+  "naam_in_inventarisatie": "Sloterdijk Westpoort"
+ },
+ {
+  "link_id": 67,
+  "hub": "EHUB-Eco congestie loket Weesp Weesp",
+  "provincie": "Noord-Holland",
+  "community": "Stimuleringsprogramma NH",
+  "status": "Niet bevestigd",
+  "hub_id": 390,
+  "naam_in_inventarisatie": "EHUB-Eco congestie loket Weesp"
+ },
+ {
+  "link_id": 68,
+  "hub": "EHUB IVW-Weesp Duurzaam Initiatief Weesp",
+  "provincie": "Noord-Holland",
+  "community": "Stimuleringsprogramma NH",
+  "status": "Niet bevestigd",
+  "hub_id": 391,
+  "naam_in_inventarisatie": "EHUB IVW-Weesp Duurzaam Initiatief"
+ },
+ {
+  "link_id": 69,
+  "hub": "Boekelermeer Energy Valley Alkmaar",
+  "provincie": "Noord-Holland",
+  "community": "Stimuleringsprogramma NH",
+  "status": "Bevestigd",
+  "hub_id": 429,
+  "naam_in_inventarisatie": "Boekelermeer Energy Valley"
+ },
+ {
+  "link_id": 70,
+  "hub": "KBP Hapert",
+  "provincie": "Noord-Brabant",
+  "community": "EWB Brabant CoP",
+  "status": "Niet bevestigd",
+  "hub_id": null,
+  "naam_in_inventarisatie": null
+ },
+ {
+  "link_id": 71,
+  "hub": "Theodorushaven/ Noordland/DePoort Bergen op Zoom",
+  "provincie": "Noord-Brabant",
+  "community": "EWB Brabant CoP",
+  "status": "Niet bevestigd",
+  "hub_id": 369,
+  "naam_in_inventarisatie": "Theodorushaven/ Noordland/DePoort"
+ },
+ {
+  "link_id": 72,
+  "hub": "Energiehub Oude Molen Halsteren",
+  "provincie": "Noord-Brabant",
+  "community": "EWB Brabant CoP",
+  "status": "Niet bevestigd",
+  "hub_id": 370,
+  "naam_in_inventarisatie": "Energiehub Oude Molen"
+ },
+ {
+  "link_id": 73,
+  "hub": "Energiehub LMM Bergen op Zoom",
+  "provincie": "Noord-Brabant",
+  "community": "EWB Brabant CoP",
+  "status": "Niet bevestigd",
+  "hub_id": 371,
+  "naam_in_inventarisatie": "Energiehub LMM"
+ },
+ {
+  "link_id": 74,
+  "hub": "Ehub Dintelmond Heijningen",
+  "provincie": "Noord-Brabant",
+  "community": "EWB Brabant CoP",
+  "status": "Niet bevestigd",
+  "hub_id": 372,
+  "naam_in_inventarisatie": "Ehub Dintelmond"
+ },
+ {
+  "link_id": 75,
+  "hub": "Energyhub Vlasweg - Port of Moerdijk Moerdijk",
+  "provincie": "Noord-Brabant",
+  "community": "EWB Brabant CoP",
+  "status": "Niet bevestigd",
+  "hub_id": 373,
+  "naam_in_inventarisatie": "Energyhub Vlasweg - Port of Moerdijk"
+ },
+ {
+  "link_id": 76,
+  "hub": "Energiehub Everdenberg-Oost Oosterhout",
+  "provincie": "Noord-Brabant",
+  "community": "EWB Brabant CoP",
+  "status": "Niet bevestigd",
+  "hub_id": 374,
+  "naam_in_inventarisatie": "Energiehub Everdenberg-Oost"
+ },
+ {
+  "link_id": 77,
+  "hub": "Energiehub De Hurk Eindhoven",
+  "provincie": "Noord-Brabant",
+  "community": "EWB Brabant CoP",
+  "status": "Niet bevestigd",
+  "hub_id": 375,
+  "naam_in_inventarisatie": "Energiehub De Hurk"
+ },
+ {
+  "link_id": 78,
+  "hub": "Energiehub Tilburg Zuid Tilburg",
+  "provincie": "Noord-Brabant",
+  "community": "EWB Brabant CoP",
+  "status": "Niet bevestigd",
+  "hub_id": 376,
+  "naam_in_inventarisatie": "Energiehub Tilburg Zuid"
+ },
+ {
+  "link_id": 79,
+  "hub": "Energiehub Kraaiven - Vossenberg Tilburg",
+  "provincie": "Noord-Brabant",
+  "community": "EWB Brabant CoP",
+  "status": "Niet bevestigd",
+  "hub_id": 377,
+  "naam_in_inventarisatie": "Energiehub Kraaiven - Vossenberg"
+ },
+ {
+  "link_id": 80,
+  "hub": "Energiehub Loven Tilburg",
+  "provincie": "Noord-Brabant",
+  "community": "EWB Brabant CoP",
+  "status": "Niet bevestigd",
+  "hub_id": 378,
+  "naam_in_inventarisatie": "Energiehub Loven"
+ },
+ {
+  "link_id": 81,
+  "hub": "Grote Oogst Moleneind Oss",
+  "provincie": "Noord-Brabant",
+  "community": "EWB Brabant CoP",
+  "status": "Niet bevestigd",
+  "hub_id": 379,
+  "naam_in_inventarisatie": "Grote Oogst Moleneind"
+ },
+ {
+  "link_id": 82,
+  "hub": "Energyhub bedrijventerrein Uden Uden",
+  "provincie": "Noord-Brabant",
+  "community": "EWB Brabant CoP",
+  "status": "Niet bevestigd",
+  "hub_id": 380,
+  "naam_in_inventarisatie": "Energyhub bedrijventerrein Uden"
+ },
+ {
+  "link_id": 83,
+  "hub": "Energie Hub Duin Schijndel Schijndel",
+  "provincie": "Noord-Brabant",
+  "community": "EWB Brabant CoP",
+  "status": "Niet bevestigd",
+  "hub_id": 381,
+  "naam_in_inventarisatie": "Energie Hub Duin Schijndel"
+ },
+ {
+  "link_id": 84,
+  "hub": "Haalbaarheidsstudie Energiehub Elzenburg-de Geer Oss",
+  "provincie": "Noord-Brabant",
+  "community": "EWB Brabant CoP",
+  "status": "Niet bevestigd",
+  "hub_id": 382,
+  "naam_in_inventarisatie": "Haalbaarheidsstudie Energiehub Elzenburg-de Geer"
+ },
+ {
+  "link_id": 85,
+  "hub": "Haalbaarheidsstudie Energiehub Asten Asten",
+  "provincie": "Noord-Brabant",
+  "community": "EWB Brabant CoP",
+  "status": "Niet bevestigd",
+  "hub_id": 383,
+  "naam_in_inventarisatie": "Haalbaarheidsstudie energie hub Asten"
+ },
+ {
+  "link_id": 86,
+  "hub": "Lokaal Collectief Energiesysteem / LCE Veghel",
+  "provincie": "Noord-Brabant",
+  "community": "EWB Brabant CoP",
+  "status": "Niet bevestigd",
+  "hub_id": 384,
+  "naam_in_inventarisatie": "Lokaal Collectief Energiesysteem / LCE"
+ },
+ {
+  "link_id": 87,
+  "hub": "e-Hub Majoppeveld Roosendaal",
+  "provincie": "Noord-Brabant",
+  "community": "EWB Brabant CoP",
+  "status": "Niet bevestigd",
+  "hub_id": 385,
+  "naam_in_inventarisatie": "e-Hub Majoppeveld"
+ },
+ {
+  "link_id": 88,
+  "hub": "Energie Verkenning Borchwerf I Roosendaal",
+  "provincie": "Noord-Brabant",
+  "community": "EWB Brabant CoP",
+  "status": "Niet bevestigd",
+  "hub_id": 386,
+  "naam_in_inventarisatie": "Energie Verkenning Borchwerf I"
+ },
+ {
+  "link_id": 89,
+  "hub": "Energiehub Habraken Veldhoven",
+  "provincie": "Noord-Brabant",
+  "community": "EWB Brabant CoP",
+  "status": "Niet bevestigd",
+  "hub_id": 430,
+  "naam_in_inventarisatie": "Energiehub Habraken"
+ },
+ {
+  "link_id": 90,
+  "hub": "Smart Energy Hubs Deventer",
+  "provincie": "Overijssel",
+  "community": "TSE LC Systeemintegratie",
+  "status": "Bevestigd",
+  "hub_id": null,
+  "naam_in_inventarisatie": null
+ },
+ {
+  "link_id": 91,
+  "hub": "Eeserwold Energy Hub",
+  "provincie": "Overijssel",
+  "community": "TSE LC Systeemintegratie",
+  "status": "Bevestigd",
+  "hub_id": null,
+  "naam_in_inventarisatie": null
+ },
+ {
+  "link_id": 92,
+  "hub": "Ecofactorij",
+  "provincie": "Gelderland",
+  "community": "TSE LC Systeemintegratie",
+  "status": "Bevestigd",
+  "hub_id": 255,
+  "naam_in_inventarisatie": "Ecofactory"
+ },
+ {
+  "link_id": 93,
+  "hub": "Slim Multi-User Energiesysteem",
+  "provincie": "Gelderland",
+  "community": "TSE LC Systeemintegratie",
+  "status": "Bevestigd",
+  "hub_id": null,
+  "naam_in_inventarisatie": null
+ },
+ {
+  "link_id": 94,
+  "hub": "Innofase Duiven",
+  "provincie": "Gelderland",
+  "community": "Oost-NL Smart Energy Hubs",
+  "status": "Bevestigd",
+  "hub_id": 608,
+  "naam_in_inventarisatie": "Innofase Duiven",
+  "bron": "Naamvariant van 'Innofase' (al bevestigd in Oost-NL SEH)",
+  "herkomst": "auto-match radar-hubs nov 2026"
+ },
+ {
+  "link_id": 95,
+  "hub": "TPN-West Nijmegen",
+  "provincie": "Gelderland",
+  "community": "Oost-NL Smart Energy Hubs",
+  "status": "Bevestigd",
+  "hub_id": 607,
+  "naam_in_inventarisatie": "TPN-West Nijmegen",
+  "bron": "Naamvariant van 'Binnenhaven TPN-West Nijmegen' (Oost-NL SEH)",
+  "herkomst": "auto-match radar-hubs nov 2026"
+ },
+ {
+  "link_id": 96,
+  "hub": "SEH Zutphen De Mars",
+  "provincie": "Gelderland",
+  "community": "Oost-NL Smart Energy Hubs",
+  "status": "Bevestigd",
+  "hub_id": 609,
+  "naam_in_inventarisatie": "SEH Zutphen De Mars",
+  "bron": "Naamvariant van 'De Mars' (Oost-NL SEH)",
+  "herkomst": "auto-match radar-hubs nov 2026"
+ },
+ {
+  "link_id": 97,
+  "hub": "Energieterrein Broeklanden",
+  "provincie": "Overijssel",
+  "community": "Oost-NL Smart Energy Hubs",
+  "status": "Bevestigd",
+  "hub_id": 562,
+  "naam_in_inventarisatie": "Energieterrein Broeklanden",
+  "bron": "Naamvariant van 'Broeklanden' (Oost-NL SEH)",
+  "herkomst": "auto-match radar-hubs nov 2026"
+ },
+ {
+  "link_id": 98,
+  "hub": "XL Businesspark",
+  "provincie": "Overijssel",
+  "community": "Oost-NL Smart Energy Hubs",
+  "status": "Bevestigd",
+  "hub_id": 611,
+  "naam_in_inventarisatie": "XL Businesspark",
+  "bron": "Naamvariant van 'XL Businesspark in Almelo' (Oost-NL SEH)",
+  "herkomst": "auto-match radar-hubs nov 2026"
+ },
+ {
+  "link_id": 99,
+  "hub": "Hapert",
+  "provincie": "Noord-Brabant",
+  "community": "EWB Brabant CoP",
+  "status": "Bevestigd",
+  "hub_id": 586,
+  "naam_in_inventarisatie": "Hapert",
+  "bron": "Naamvariant van 'KBP Hapert' (EWB Brabant CoP)",
+  "herkomst": "auto-match radar-hubs nov 2026"
+ },
+ {
+  "link_id": 100,
+  "hub": "Gooimeer Energie/Wattdelen Gooise Meren (bedrijven)",
+  "provincie": "Noord-Holland",
+  "community": "Stimuleringsprogramma NH",
+  "status": "Bevestigd",
+  "hub_id": 614,
+  "naam_in_inventarisatie": "Gooimeer Energie/Wattdelen Gooise Meren (bedrijven)",
+  "bron": "Naamvariant van 'Gooimeer' (Stimuleringsprogramma NH)",
+  "herkomst": "auto-match radar-hubs nov 2026"
+ },
+ {
+  "link_id": 101,
+  "hub": "Project DOEN-2",
+  "provincie": "Noord-Holland",
+  "community": "Stimuleringsprogramma NH",
+  "status": "Bevestigd",
+  "hub_id": 620,
+  "naam_in_inventarisatie": "Project DOEN-2",
+  "bron": "Naamvariant van 'Project Doen-2 / Noorderveld Wormerveer' (NH)",
+  "herkomst": "auto-match radar-hubs nov 2026"
+ },
+ {
+  "link_id": 102,
+  "hub": "Duurzaam initiatief: EHUB-Eco congestie loket Weesp, slimme energie oplossingen",
+  "provincie": "Noord-Holland",
+  "community": "Stimuleringsprogramma NH",
+  "status": "Bevestigd",
+  "hub_id": 623,
+  "naam_in_inventarisatie": "Duurzaam initiatief: EHUB-Eco congestie loket Weesp, slimme energie oplossingen",
+  "bron": "Naamvariant van 'EHUB-Eco congestie loket Weesp' (NH)",
+  "herkomst": "auto-match radar-hubs nov 2026"
+ },
+ {
+  "link_id": 103,
+  "hub": "Arenapoort / Johan Cruyff Arena",
+  "provincie": "Noord-Holland",
+  "community": "Stimuleringsprogramma NH",
+  "status": "Bevestigd",
+  "hub_id": 624,
+  "naam_in_inventarisatie": "Arenapoort / Johan Cruyff Arena",
+  "bron": "Naamvariant van 'ArenApoort' (Stimuleringsprogramma NH)",
+  "herkomst": "auto-match radar-hubs nov 2026"
+ },
+ {
+  "link_id": 105,
+  "hub": "Lingezegen Energy",
+  "provincie": "Gelderland",
+  "community": "Oost-NL Smart Energy Hubs",
+  "status": "Bevestigd",
+  "hub_id": 518,
+  "naam_in_inventarisatie": "Lingezegen Energy",
+  "bron": "Genoemd op oostnl.nl + smartenergyhubs.eu (megabatterij, multi-commodity hub)",
+  "herkomst": "auto-match radar-hubs nov 2026"
+ },
+ {
+  "link_id": 107,
+  "hub": "Nijvercampus Veenendaal",
+  "provincie": "Utrecht",
+  "community": "Prov. Utrecht – aanpak energiehubs",
+  "status": "Bevestigd",
+  "hub_id": 565,
+  "naam_in_inventarisatie": "Nijvercampus Veenendaal",
+  "bron": "SEH-onderzoek Nijverkamp via gem. Veenendaal + Energietransitie Utrecht",
+  "herkomst": "auto-match radar-hubs nov 2026"
+ },
+ {
+  "link_id": 108,
+  "hub": "De Laarberg Groenlo",
+  "provincie": "Gelderland",
+  "community": "Oost-NL Smart Energy Hubs",
+  "status": "Bevestigd",
+  "hub_id": 547,
+  "naam_in_inventarisatie": "De Laarberg Groenlo",
+  "bron": "SEH Laarberg (binddd.nl case, Oost-NL)",
+  "herkomst": "auto-match radar-hubs nov 2026"
+ },
+ {
+  "link_id": 109,
+  "hub": "Bijsterhuizen",
+  "provincie": "Gelderland",
+  "community": "Oost-NL Smart Energy Hubs",
+  "status": "Bevestigd",
+  "hub_id": 541,
+  "naam_in_inventarisatie": "Bijsterhuizen",
+  "bron": "SEH Bijsterhuizen (bedrijvenvereniging, update feb 2024)",
+  "herkomst": "auto-match radar-hubs nov 2026"
+ },
+ {
+  "link_id": 110,
+  "hub": "Medel (bestaand)",
+  "provincie": "Gelderland",
+  "community": "Oost-NL Smart Energy Hubs",
+  "status": "Bevestigd",
+  "hub_id": 533,
+  "naam_in_inventarisatie": "Medel (bestaand)",
+  "bron": "Energiehub Medel (energyhubmedel.nl + Joulz); Oost-NL regio",
+  "herkomst": "auto-match radar-hubs nov 2026"
+ },
+ {
+  "link_id": 111,
+  "hub": "Medel (nieuw)",
+  "provincie": "Gelderland",
+  "community": "Oost-NL Smart Energy Hubs",
+  "status": "Bevestigd",
+  "hub_id": 537,
+  "naam_in_inventarisatie": "Medel (nieuw)",
+  "bron": "Energiehub Medel (energyhubmedel.nl + Joulz); Oost-NL regio",
+  "herkomst": "auto-match radar-hubs nov 2026"
+ },
+ {
+  "link_id": 112,
+  "hub": "Noviotech Campus",
+  "provincie": "Gelderland",
+  "community": "Oost-NL Smart Energy Hubs",
+  "status": "Bevestigd",
+  "hub_id": 516,
+  "naam_in_inventarisatie": "Noviotech Campus",
+  "bron": "SEH Nijmegen (gelderland.nl nieuws)",
+  "herkomst": "auto-match radar-hubs nov 2026"
+ },
+ {
+  "link_id": 114,
+  "hub": "Bedrijvenpark A18",
+  "provincie": "Gelderland",
+  "community": "DO Achterhoek – Slimme Energiegemeenschappen",
+  "status": "Bevestigd",
+  "hub_id": 556,
+  "naam_in_inventarisatie": "Bedrijvenpark A18",
+  "bron": "Kansenkaart Slimme Energiegemeenschappen Achterhoek (DOA)",
+  "herkomst": "auto-match radar-hubs nov 2026"
+ },
+ {
+  "link_id": 115,
+  "hub": "Pavijen",
+  "provincie": "Gelderland",
+  "community": "DOE Rivierenland",
+  "status": "Bevestigd",
+  "hub_id": 559,
+  "naam_in_inventarisatie": "Pavijen",
+  "bron": "Pavijen onderzoekt decentraal energienetwerk (DOE Rivierenland + Culemborg Duurzaam)",
+  "herkomst": "auto-match radar-hubs nov 2026"
+ },
+ {
+  "link_id": 116,
+  "hub": "Eekterveld",
+  "provincie": "Gelderland",
+  "community": "Epe Verduurzaamt / lokaal",
+  "status": "Bevestigd",
+  "hub_id": 538,
+  "naam_in_inventarisatie": "Eekterveld",
+  "bron": "Energy hub Eekterveld officieel van start (vaassenactief.nl)",
+  "herkomst": "auto-match radar-hubs nov 2026"
+ },
+ {
+  "link_id": 118,
+  "hub": "De Huet & Keppelseweg",
+  "provincie": "Gelderland",
+  "community": "DO Achterhoek – Slimme Energiegemeenschappen",
+  "status": "Bevestigd",
+  "hub_id": 557,
+  "naam_in_inventarisatie": "De Huet & Keppelseweg",
+  "bron": "DOA Kansenkaart Slimme Energiegemeenschappen Achterhoek (jan 2025), top-20 BT-selectie – #2",
+  "herkomst": "auto-match radar-hubs nov 2026"
+ },
+ {
+  "link_id": 119,
+  "hub": "Verheulsweide/Wijnbergen",
+  "provincie": "Gelderland",
+  "community": "DO Achterhoek – Slimme Energiegemeenschappen",
+  "status": "Bevestigd",
+  "hub_id": 554,
+  "naam_in_inventarisatie": "Verheulsweide/Wijnbergen",
+  "bron": "DOA Kansenkaart Slimme Energiegemeenschappen Achterhoek (jan 2025), top-20 BT-selectie – #5 (Verheulsweide) + #10 (Wijnbergen)",
+  "herkomst": "auto-match radar-hubs nov 2026"
+ },
+ {
+  "link_id": 120,
+  "hub": "Veeneslat (noord & zuid)",
+  "provincie": "Gelderland",
+  "community": "DO Achterhoek – Slimme Energiegemeenschappen",
+  "status": "Bevestigd",
+  "hub_id": 542,
+  "naam_in_inventarisatie": "Veeneslat (noord & zuid)",
+  "bron": "DOA Kansenkaart Slimme Energiegemeenschappen Achterhoek (jan 2025), top-20 BT-selectie – #8 Vèèneslat Noord & Zuid Winterswijk",
+  "herkomst": "auto-match radar-hubs nov 2026"
+ },
+ {
+  "link_id": 121,
+  "hub": "Hofskamp",
+  "provincie": "Gelderland",
+  "community": "DO Achterhoek – Slimme Energiegemeenschappen",
+  "status": "Bevestigd",
+  "hub_id": 540,
+  "naam_in_inventarisatie": "Hofskamp",
+  "bron": "DOA Kansenkaart Slimme Energiegemeenschappen Achterhoek (jan 2025), top-20 BT-selectie – #9 Hofskamp Varsseveld",
+  "herkomst": "auto-match radar-hubs nov 2026"
+ },
+ {
+  "link_id": 123,
+  "hub": "'s-Heerenberg",
+  "provincie": "Gelderland",
+  "community": "DO Achterhoek – Slimme Energiegemeenschappen",
+  "status": "Bevestigd",
+  "hub_id": 531,
+  "naam_in_inventarisatie": "'s-Heerenberg",
+  "bron": "DOA Kansenkaart Slimme Energiegemeenschappen Achterhoek (jan 2025), top-20 BT-selectie – #7 's-Heerenberg Montferland",
+  "herkomst": "auto-match radar-hubs nov 2026"
+ },
+ {
+  "link_id": 125,
+  "hub": "Arkervaart",
+  "provincie": "Gelderland",
+  "community": "Lokaal/gemeentelijk SEH-traject",
+  "status": "Bevestigd",
+  "hub_id": 525,
+  "naam_in_inventarisatie": "Arkervaart",
+  "bron": "Arkervaart/Watergoor EnergieHUB (Duurzaam Nijkerk)",
+  "herkomst": "auto-match radar-hubs nov 2026"
+ },
+ {
+  "link_id": 126,
+  "hub": "De Kolk",
+  "provincie": "Gelderland",
+  "community": "Lokaal/gemeentelijk SEH-traject",
+  "status": "Bevestigd",
+  "hub_id": 534,
+  "naam_in_inventarisatie": "De Kolk",
+  "bron": "Gemeente Nunspeet draagt bij aan energiehub De Kolk",
+  "herkomst": "auto-match radar-hubs nov 2026"
+ },
+ {
+  "link_id": 128,
+  "hub": "Verduurzaming Bedrijventerrein Elzenburg-de Geer Oss",
+  "provincie": "Noord-Brabant",
+  "community": "Stimuleringsprogramma Brabantse Energiehubs 2025-2027",
+  "status": "Bevestigd",
+  "hub_id": 616,
+  "naam_in_inventarisatie": "Verduurzaming Bedrijventerrein Elzenburg-de Geer Oss",
+  "bron": "Plan van Aanpak Stimulering Brabantse Energiehubs 2025-2027 (brabant.nl), BT-selectie bijlage 3 – Elzenburg De Geer",
+  "herkomst": "auto-match radar-hubs nov 2026"
+ },
+ {
+  "link_id": 129,
+  "hub": "haalbaarheidsstudie Nobisweg Asten",
+  "provincie": "Noord-Brabant",
+  "community": "Stimuleringsprogramma Brabantse Energiehubs 2025-2027",
+  "status": "Bevestigd",
+  "hub_id": 617,
+  "naam_in_inventarisatie": "haalbaarheidsstudie Nobisweg Asten",
+  "bron": "Plan van Aanpak Stimulering Brabantse Energiehubs 2025-2027 (brabant.nl), BT-selectie bijlage 3 – Nobisweg Asten",
+  "herkomst": "auto-match radar-hubs nov 2026"
+ },
+ {
+  "link_id": 130,
+  "hub": "Energiehub Weststad",
+  "provincie": "Noord-Brabant",
+  "community": "Stimuleringsprogramma Brabantse Energiehubs 2025-2027",
+  "status": "Bevestigd",
+  "hub_id": 618,
+  "naam_in_inventarisatie": "Energiehub Weststad",
+  "bron": "Plan van Aanpak Stimulering Brabantse Energiehubs 2025-2027 (brabant.nl), BT-selectie bijlage 3 – Weststad Oosterhout",
+  "herkomst": "auto-match radar-hubs nov 2026"
+ },
+ {
+  "link_id": 131,
+  "hub": "Energiehub De Run 4000",
+  "provincie": "Noord-Brabant",
+  "community": "Stimuleringsprogramma Brabantse Energiehubs 2025-2027",
+  "status": "Bevestigd",
+  "hub_id": 621,
+  "naam_in_inventarisatie": "Energiehub De Run 4000",
+  "bron": "Plan van Aanpak Stimulering Brabantse Energiehubs 2025-2027 (brabant.nl), BT-selectie bijlage 3 – De Run Veldhoven",
+  "herkomst": "auto-match radar-hubs nov 2026"
+ },
+ {
+  "link_id": 132,
+  "hub": "Energiehub Kempisch Bedrijvenpark",
+  "provincie": "Noord-Brabant",
+  "community": "Stimuleringsprogramma Brabantse Energiehubs 2025-2027",
+  "status": "Bevestigd",
+  "hub_id": 625,
+  "naam_in_inventarisatie": "Energiehub Kempisch Bedrijvenpark",
+  "bron": "Plan van Aanpak Stimulering Brabantse Energiehubs 2025-2027 (brabant.nl), BT-selectie bijlage 3 – KBP (Enexis GTO)",
+  "herkomst": "auto-match radar-hubs nov 2026"
+ },
+ {
+  "link_id": 133,
+  "hub": "Haalbaarbaarheidstudie energiehub",
+  "provincie": "Noord-Brabant",
+  "community": "Stimuleringsprogramma Brabantse Energiehubs 2025-2027",
+  "status": "Bevestigd",
+  "hub_id": 549,
+  "naam_in_inventarisatie": "Haalbaarbaarheidstudie energiehub",
+  "bron": "Plan van Aanpak Stimulering Brabantse Energiehubs 2025-2027 (brabant.nl), BT-selectie bijlage 3 – Asten (Nobisweg haalbaarheidsronde)",
+  "herkomst": "auto-match radar-hubs nov 2026"
+ },
+ {
+  "link_id": 134,
+  "hub": "Grote Oogst Vorstengrafdonk Oss",
+  "provincie": "Noord-Brabant",
+  "community": "Grote Oogst Brabant (bedrijventerreinen)",
+  "status": "Bevestigd",
+  "hub_id": 593,
+  "naam_in_inventarisatie": "Grote Oogst Vorstengrafdonk Oss",
+  "bron": "Grote Oogst-programma (plan noemt 12 GO-terreinen); Vorstengrafdonk Oss",
+  "herkomst": "auto-match radar-hubs nov 2026"
+ },
+ {
+  "link_id": 135,
+  "hub": "Vorstengrafdonk",
+  "provincie": "Noord-Brabant",
+  "community": "Grote Oogst Brabant (bedrijventerreinen)",
+  "status": "Bevestigd",
+  "hub_id": 613,
+  "naam_in_inventarisatie": "Vorstengrafdonk",
+  "bron": "Grote Oogst Vorstengrafdonk Oss",
+  "herkomst": "auto-match radar-hubs nov 2026"
+ },
+ {
+  "link_id": 136,
+  "hub": "Energyhub Moleneind",
+  "provincie": "Noord-Brabant",
+  "community": "Grote Oogst Brabant (bedrijventerreinen)",
+  "status": "Bevestigd",
+  "hub_id": 612,
+  "naam_in_inventarisatie": "Energyhub Moleneind",
+  "bron": "Grote Oogst Moleneind Oss",
+  "herkomst": "auto-match radar-hubs nov 2026"
+ },
+ {
+  "link_id": 138,
+  "hub": "Haalbaarheidsstudie Hazeldonk",
+  "provincie": "Noord-Brabant",
+  "community": "Stichting Breda Energie",
+  "status": "Bevestigd",
+  "hub_id": 580,
+  "naam_in_inventarisatie": "Haalbaarheidsstudie Hazeldonk",
+  "bron": "Stichting Breda Energie (rvo.nl – gesloten energiekringloop Bredase BT's); Hazeldonk Breda",
+  "herkomst": "auto-match radar-hubs nov 2026"
+ },
+ {
+  "link_id": 139,
+  "hub": "Energiehub Hazeldonk",
+  "provincie": "Noord-Brabant",
+  "community": "Stichting Breda Energie",
+  "status": "Bevestigd",
+  "hub_id": 591,
+  "naam_in_inventarisatie": "Energiehub Hazeldonk",
+  "bron": "Stichting Breda Energie (rvo.nl – gesloten energiekringloop Bredase BT's); Hazeldonk Breda",
+  "herkomst": "auto-match radar-hubs nov 2026"
+ },
+ {
+  "link_id": 140,
+  "hub": "Energiehub Steenakker",
+  "provincie": "Noord-Brabant",
+  "community": "Stichting Breda Energie",
+  "status": "Bevestigd",
+  "hub_id": 584,
+  "naam_in_inventarisatie": "Energiehub Steenakker",
+  "bron": "Stichting Breda Energie (rvo.nl – gesloten energiekringloop Bredase BT's); Steenakker Breda",
+  "herkomst": "auto-match radar-hubs nov 2026"
+ },
+ {
+  "link_id": 141,
+  "hub": "Energiehub 3BO",
+  "provincie": "Noord-Brabant",
+  "community": "Stichting Breda Energie",
+  "status": "Bevestigd",
+  "hub_id": 590,
+  "naam_in_inventarisatie": "Energiehub 3BO",
+  "bron": "Stichting Breda Energie (rvo.nl – gesloten energiekringloop Bredase BT's); 3BO Breda",
+  "herkomst": "auto-match radar-hubs nov 2026"
+ },
+ {
+  "link_id": 142,
+  "hub": "Energiehub De Mark",
+  "provincie": "Noord-Brabant",
+  "community": "Stichting Breda Energie",
+  "status": "Bevestigd",
+  "hub_id": 592,
+  "naam_in_inventarisatie": "Energiehub De Mark",
+  "bron": "Stichting Breda Energie (rvo.nl – gesloten energiekringloop Bredase BT's); De Mark Breda",
+  "herkomst": "auto-match radar-hubs nov 2026"
+ },
+ {
+  "link_id": 161,
+  "hub": "Smakterheide",
+  "provincie": "Limburg",
+  "community": "Energiehubs Noord-Limburg (RN-L)",
+  "status": "Bevestigd",
+  "hub_id": 568,
+  "naam_in_inventarisatie": "Smakterheide",
+  "bron": "RN-L projectpagina: bedrijventerrein Smakterheide Venray + Ondernemersvereniging",
+  "herkomst": "auto-match radar-hubs nov 2026"
+ },
+ {
+  "link_id": 171,
+  "hub": "Schakelstation Boekelermeer hub",
+  "provincie": "Noord-Holland",
+  "community": "Stimuleringsprogramma NH",
+  "status": "Bevestigd",
+  "hub_id": 512,
+  "naam_in_inventarisatie": "Schakelstation Boekelermeer hub",
+  "bron": "Energiehub Boekelermeer (NHN Bedrijventerreinen + case energiehubs.nl)",
+  "herkomst": "auto-match radar-hubs nov 2026"
+ },
+ {
+  "link_id": 172,
+  "hub": "Energiecoöperatie Amsterdamse Haven (ECAH)",
+  "provincie": "Noord-Holland",
+  "community": "EIGEN / MOOI-SIGOHE",
+  "status": "Bevestigd",
+  "hub_id": 561,
+  "naam_in_inventarisatie": "Energiecoöperatie Amsterdamse Haven (ECAH)",
+  "bron": "Energiecoöperatie Amsterdamse Haven (ECAH); Amsterdam havengebied",
+  "herkomst": "auto-match radar-hubs nov 2026"
+ },
+ {
+  "link_id": 175,
+  "hub": "ECAH - IJpolder",
+  "provincie": "Noord-Holland",
+  "community": "EIGEN / MOOI-SIGOHE",
+  "status": "Bevestigd",
+  "hub_id": 619,
+  "naam_in_inventarisatie": "ECAH - IJpolder",
+  "bron": "Energiecoöperatie Amsterdamse Haven (ECAH); Amsterdam havengebied",
+  "herkomst": "auto-match radar-hubs nov 2026"
+ },
+ {
+  "link_id": 184,
+  "hub": "Energie Samenwerkingsentiteit Papendorp",
+  "provincie": "Utrecht",
+  "community": "Prov. Utrecht – aanpak energiehubs",
+  "status": "Bevestigd",
+  "hub_id": 577,
+  "naam_in_inventarisatie": "Energie Samenwerkingsentiteit Papendorp",
+  "bron": "Energie Samenwerkingsentiteit Papendorp: Utrechtse energiehub-aanpak (Stedin + prov. Utrecht)",
+  "herkomst": "auto-match radar-hubs nov 2026"
+ },
+ {
+  "link_id": 185,
+  "hub": "Hysolar Nieuwegein",
+  "provincie": "Utrecht",
+  "community": "Prov. Utrecht – aanpak energiehubs",
+  "status": "Bevestigd",
+  "hub_id": 595,
+  "naam_in_inventarisatie": "Hysolar Nieuwegein",
+  "bron": "Hysolar Nieuwegein: Utrechtse energiehub-aanpak (Stedin + prov. Utrecht)",
+  "herkomst": "auto-match radar-hubs nov 2026"
+ }
+]
