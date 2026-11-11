@@ -37,13 +37,18 @@ jobs:
           python-version: "3.12"
 
       - name: Install dependencies
-        run: pip install openpyxl anthropic pandas
+        run: |
+          pip install openpyxl anthropic pandas playwright
+          python -m playwright install --with-deps chromium
 
       - name: Fetch radar
         run: python scripts/fetch_radar.py
 
       - name: Update Excel-dataset
         run: python scripts/update_dataset.py
+
+      - name: Vul ontbrekende GPS aan (OpenStreetMap, gratis)
+        run: python scripts/geocode_missing.py
 
       - name: Enrich new hubs (optioneel, agentisch)
         if: github.event_name == 'workflow_dispatch' && inputs.enrich
