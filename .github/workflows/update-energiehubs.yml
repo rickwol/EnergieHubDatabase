@@ -61,11 +61,14 @@ jobs:
           python clean.py "$DATASET_PATH"
           mv energiehubs.json public/energiehubs.json
 
+      - name: Herkoppel community-links aan actuele hub_id's
+        run: python scripts/relink_communities.py
+
       - name: Commit & push
         run: |
           git config user.name  "energiehubs-radar-bot"
           git config user.email "actions@github.com"
-          git add "$DATASET_PATH" public/energiehubs.json radar_data/ 2>/dev/null || git add "$DATASET_PATH" public/energiehubs.json
+          git add "$DATASET_PATH" public/energiehubs.json public/community_links.json radar_data/ 2>/dev/null || git add "$DATASET_PATH" public/energiehubs.json public/community_links.json
           if git diff --cached --quiet; then
             echo "Geen wijzigingen — niets te committen, geen deploy."
           else
