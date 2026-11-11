@@ -1,0 +1,77 @@
+name: Update energiehubs-data
+
+# Wekelijkse radar-sync voor de EnergieHubDatabase (Railway-dashboard).
+# Werkt de Excel bij, regenereert public/energiehubs.json via clean.py en pusht
+# beide terug. Railway herdeployt automatisch bij de push.
+
+on:
+  schedule:
+    - cron: "0 7 * * 1"          # elke maandag 07:00 UTC
+  workflow_dispatch:
+    inputs:
+      enrich:
+        description: "Agentische verrijking (contact+GPS via Claude, kost API-credits)"
+        type: boolean
+        default: false
+      enrich_min_companies:
+        description: "Verrijk alleen hubs met minstens dit aantal bedrijven"
+        type: string
+        default: "3"
+
+permissions:
+  contents: write
+
+env:
+  DATASET_PATH: Energiehubs_Uniform_Fases_RES_REGIO.xlsx
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install openpyxl anthropic pandas
+
+      - name: Fetch radar
+        run: python scripts/fetch_radar.py
+
+      - name: Update Excel-dataset
+        run: python scripts/update_dataset.py
+
+      - name: Enrich new hubs (optioneel, agentisch)
+        if: github.event_name == 'workflow_dispatch' && inputs.enrich
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: python scripts/enrich_hubs.py --only-new --min-companies "${{ inputs.enrich_min_companies }}"
+
+      - name: Regenereer public/energiehubs.json
+        run: |
+          python clean.py "$DATASET_PATH"
+          mv energiehubs.json public/energiehubs.json
+
+      - name: Commit & push
+        run: |
+          git config user.name  "energiehubs-radar-bot"
+          git config user.email "actions@github.com"
+          git add "$DATASET_PATH" public/energiehubs.json radar_data/ 2>/dev/null || git add "$DATASET_PATH" public/energiehubs.json
+          if git diff --cached --quiet; then
+            echo "Geen wijzigingen — niets te committen, geen deploy."
+          else
+            git commit -m "Radar-update $(date -u +%Y-%m-%d) [skip ci]"
+            git push
+          fi
+
+      - name: Bewaar changelog als artifact
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: changelog
+          path: radar_data/changelog.md
+          if-no-files-found: ignore
