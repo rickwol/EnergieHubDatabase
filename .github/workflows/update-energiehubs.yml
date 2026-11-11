@@ -37,7 +37,9 @@ jobs:
           python-version: "3.12"
 
       - name: Install dependencies
-        run: pip install openpyxl anthropic pandas
+        run: |
+          pip install openpyxl anthropic pandas playwright
+          python -m playwright install --with-deps chromium
 
       - name: Fetch radar
         run: python scripts/fetch_radar.py
