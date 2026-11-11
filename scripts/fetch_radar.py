@@ -96,16 +96,28 @@ def parse_initiatieven(lines: list[str]) -> list[dict]:
 
 
 def total_and_pages(page) -> tuple[int, int]:
-    """Lees het totaal ('466 energiehubs in Nederland') en het hoogste paginanummer."""
+    """Bepaal het aantal lijstresultaten en daaruit het aantal pagina's.
+
+    De pagina toont twee tellers: 'N energiehubs in Nederland' (breed totaal) en
+    'Resultaten: M' (wat de lijst echt toont). We pagineren op M. Het aantal
+    pagina's leiden we af uit M / paginagrootte, met het hoogste zichtbare
+    paginanummer als ondergrens — robuuster dan alleen de pager uitlezen.
+    """
     body = page.inner_text("main")
-    total = 0
-    m = re.search(r"(\d+)\s+energiehubs in Nederland", body)
+    results = 0
+    m = re.search(r"Resultaten:\s*(\d+)", body)
     if m:
-        total = int(m.group(1))
-    # Hoogste zichtbare paginanummer in de pager.
-    nums = [int(n) for n in re.findall(r"\b(\d{1,3})\b", body.split("Aanmelden als deelnemer")[-1])]
-    max_page = max(nums) if nums else 1
-    return total, max_page
+        results = int(m.group(1))
+    else:
+        m2 = re.search(r"(\d+)\s+energiehubs in Nederland", body)
+        results = int(m2.group(1)) if m2 else 0
+
+    per_page = len(parse_initiatieven(page_lines(body))) or 12
+    pages_calc = -(-results // per_page) if results else 1  # ceil
+    pager_nums = [int(n) for n in re.findall(r"\b(\d{1,3})\b",
+                  body.split("Aanmelden als deelnemer")[-1])]
+    pages_visible = max(pager_nums) if pager_nums else 1
+    return results, max(pages_calc, pages_visible)
 
 
 def main():
