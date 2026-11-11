@@ -47,6 +47,9 @@ jobs:
       - name: Update Excel-dataset
         run: python scripts/update_dataset.py
 
+      - name: Vul ontbrekende GPS aan (OpenStreetMap, gratis)
+        run: python scripts/geocode_missing.py
+
       - name: Enrich new hubs (optioneel, agentisch)
         if: github.event_name == 'workflow_dispatch' && inputs.enrich
         env:
