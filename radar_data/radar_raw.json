@@ -825,17 +825,6 @@
     "energiedrager": "Elektriciteit"
   },
   {
-    "naam": "3H",
-    "plaats": "Heijen",
-    "gemeente": "Gennep",
-    "provincie_code": "LI",
-    "bedrijven": "3",
-    "fase": "Verkennen: Verkenning",
-    "netbeheerder": "Enexis",
-    "status": "Actief",
-    "energiedrager": "Elektriciteit"
-  },
-  {
     "naam": "Terschelling",
     "plaats": "West",
     "gemeente": "Terschelling",
@@ -985,17 +974,6 @@
     "provincie_code": "NB",
     "bedrijven": "5",
     "fase": "Verkennen: Initiatief & inzicht",
-    "netbeheerder": "Enexis",
-    "status": "Actief",
-    "energiedrager": "Elektriciteit"
-  },
-  {
-    "naam": "Schaapsloop",
-    "plaats": "Valkenswaard",
-    "gemeente": "Valkenswaard",
-    "provincie_code": "NB",
-    "bedrijven": "15",
-    "fase": "Plannen & Ontwerpen: Analyse",
     "netbeheerder": "Enexis",
     "status": "Actief",
     "energiedrager": "Elektriciteit"

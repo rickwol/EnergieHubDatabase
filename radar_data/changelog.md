@@ -1,6 +1,6 @@
-# Radar-update 2026-11-11
+# Radar-update 2026-11-16
 
-- Radar bevat **289** initiatieven
+- Radar bevat **287** initiatieven
 - Dataset telt nu **625** hubs (+0 nieuw)
 
 ## 14 fasewijzigingen
